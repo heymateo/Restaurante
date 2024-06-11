@@ -14,21 +14,21 @@ Sitio web de un restaurante que cuenta con 3 tipos de usuarios (Administrador, E
 
 ## Roles
 
-| Administrador | Empleado | Chef |
-|--------------|--------------|--------------|
-| CRUD Menú       | Asignar clientes a una mesa      | Ver y finalizar órdenes       |
-| CRUD Mesas       | CRUD Órdenes       | 
-| CRUD Chefs       |        
-| CRUD Empleados       |
-| Ver Cuentas       |
+| Administrador   | Empleado                        | Chef                    
+|--------------   |--------------                   |--------------           
+| CRUD Menú       | Ver mesas disponibles           | Ver menú                
+| CRUD Mesas      | Asignar clientes a una mesa     | Ver y finalizar órdenes
+| CRUD Chefs      | CRUD Órdenes       
+| CRUD Empleados  |
+| Ver Cuentas     |
 
 ## Módulos
 
-| Autenticación | Menú | Órdenes | Mesas | Cuentas | Usuarios
-|--------------|--------------|--------------|--------------|--------------|--------------|
-| Administrador    | Administrador    |     | Administrador |Administrador|Administrador
-| Empleado    |  Empleado   |  Empleado   | Empleado|    |   
-| Chef    |  Chef   |  Chef   |   |   |  
+| Autenticación    | Menú             | Órdenes      | Mesas        | Cuentas      | Usuarios
+|--------------    |--------------    |--------------|--------------|--------------|--------------
+| Administrador    | Administrador    |              | Administrador|Administrador |Administrador
+| Empleado         |  Empleado        |  Empleado    | Empleado     |              |   
+| Chef             |  Chef            |  Chef        |              |              |  
 
 ## Características
 - Desarrollado en ASP.NET Core v7
