@@ -6,7 +6,7 @@ Profesor: Jose Andrés Arias Brenes.
 
 ## Integrantes
 
-Mateo Esquivel Rodríguez, Daniel Vargas Vargas, Alonso Jesus Salazar Monge, Jose Pablo Flores Muñoz y Erick Rivera Prado.
+Mateo Esquivel Rodríguez, Cristofer Andrés Marín Lazo, Ariana Jenkins Carrillo y Jerry Fabricio Campos Arias.
 
 ## Descripción
 
@@ -29,6 +29,9 @@ Sitio web de un restaurante que cuenta con 3 tipos de usuarios (Administrador, E
 | Administrador    | Administrador    |              | Administrador|Administrador |Administrador
 | Empleado         |  Empleado        |  Empleado    | Empleado     |              |   
 | Chef             |  Chef            |  Chef        |              |              |  
+
+## Diagrama Entidad-Relación
+
 
 ## Características
 - Desarrollado en ASP.NET Core v7
