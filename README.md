@@ -32,7 +32,7 @@ Sitio web de un restaurante que cuenta con 3 tipos de usuarios (Administrador, E
 
 ## Diagrama Entidad-Relación
 
-![Diagrama](Restaurante%20Entidad-Relación.png)
+![Diagrama](Diagrama.png)
 
 ## Características
 - Desarrollado en ASP.NET Core v7
