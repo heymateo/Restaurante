@@ -10,17 +10,18 @@ Mateo Esquivel Rodríguez, Cristofer Andrés Marín Lazo, Ariana Jenkins Carrill
 
 ## Descripción
 
-Sitio web de un restaurante que cuenta con 3 tipos de usuarios (Administrador, Empleado, Chef). Cada rol tiene responsabilidades diferentes, en el caso del Administrador puede hacer un CRUD del menú, un CRUD de las mesas existentes del local, un CRUD de los chefs, un CRUD de los empleados del restaurante y puede ver un historial de las cuentas. Por el lado del rol de Empleado pueden asignar clientes a una mesa y hacer un CRUD de órdenes. Y por último en el rol de Chef se encargará de finalizar las órdenes.
+Sitio web de un restaurante para gestionar los empleados, los chefs, también el menú, las órdenes, las mesas disponibles y las cuentas de los clientes. La idea es que cada usuario utilice el sistema en su estación de producción y tengan acceso a la información que necesitan para operar en el restaurante.
 
 ## Roles
 
-| Administrador   | Empleado                        | Chef                    
-|--------------   |--------------                   |--------------           
-| CRUD Menú       | Ver mesas disponibles           | Ver menú                
-| CRUD Mesas      | Asignar clientes a una mesa     | Ver y finalizar órdenes
-| CRUD Chefs      | CRUD Órdenes       
-| CRUD Empleados  |
-| Ver Cuentas     |
+| Administrador   | Empleado                        | Chef                      | Cliente   
+|--------------   |--------------                   |--------------             |----------
+| CRUD Menú       | Ver mesas disponibles           | Ver menú                  | Asignar a una mesa     
+| CRUD Mesas      | Asignar clientes a una mesa     | Ver y finalizar órdenes   | Crear una factura de la cuenta
+| CRUD Chefs      | CRUD Órdenes                    | Login y Registro
+| CRUD Empleados  | Login y Registro          
+| Ver Cuentas     
+| Login y Registro          
 
 ## Módulos
 
