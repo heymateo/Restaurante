@@ -16,11 +16,11 @@ Sitio web de un restaurante para gestionar los empleados, los chefs, también el
 
 | Administrador        | Empleado                        | Chef                      | Cliente   
 |--------------        |--------------                   |--------------             |----------
-| CRUD Administrador   | CRUD Órdenes                    | Ver menú                  | Crear una cuenta a partir de la orden 
+| CRUD Administrador   | CRUD Órdenes                    | Ver menú                  | Ver la cuenta a partir de la orden 
 | CRUD Empleados       | Ver mesas disponibles           | Ver y finalizar órdenes     
 | CRUD Chefs           | Asignar clientes a una mesa     | Login y Registro          
-| CRUD Mesas           | Login y Registro                   
-| CRUD Menú     
+| CRUD Mesas           | Cancelar órdenes                   
+| CRUD Menú            | Login y Registro
 | Ver Cuentas     
 | Login y Registro          
 
@@ -29,7 +29,7 @@ Sitio web de un restaurante para gestionar los empleados, los chefs, también el
 | Autenticación    | Menú             | Órdenes      | Mesas        | Cuentas      | Usuarios
 |--------------    |--------------    |--------------|--------------|--------------|--------------
 | Administrador    | Administrador    |              | Administrador|Administrador |Administrador
-| Empleado         |  Empleado        |  Empleado    | Empleado     |              |   
+| Empleado         |  Empleado        |  Empleado    | Empleado     | Empleado     |   
 | Chef             |  Chef            |  Chef        |              |              |  
 
 ## Diagrama Entidad-Relación
