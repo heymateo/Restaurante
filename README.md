@@ -14,12 +14,13 @@ Sitio web de un restaurante para gestionar los empleados, los chefs, también el
 
 ## Roles
 
-| Administrador   | Empleado                        | Chef                      | Cliente   
-|--------------   |--------------                   |--------------             |----------
-| CRUD Menú       | Ver mesas disponibles           | Ver menú                  | Asignar a una mesa     
-| CRUD Mesas      | Asignar clientes a una mesa     | Ver y finalizar órdenes   | Crear una factura de la cuenta
-| CRUD Chefs      | CRUD Órdenes                    | Login y Registro
-| CRUD Empleados  | Login y Registro          
+| Administrador        | Empleado                        | Chef                      | Cliente   
+|--------------        |--------------                   |--------------             |----------
+| CRUD Administrador   | CRUD Órdenes                    | Ver menú                  | Crear una cuenta a partir de la orden 
+| CRUD Empleados       | Ver mesas disponibles           | Ver y finalizar órdenes     
+| CRUD Chefs           | Asignar clientes a una mesa     | Login y Registro          
+| CRUD Mesas           | Login y Registro                   
+| CRUD Menú     
 | Ver Cuentas     
 | Login y Registro          
 
