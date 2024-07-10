@@ -1,0 +1,64 @@
+﻿@model List<frontend.Models.AdministradorModel>
+
+<a href="@Url.Action("Create")">Crear Nuevo Administrador</a>
+
+<main id="main" class="main">
+
+    <div class="pagetitle">
+        <h1>Lista de Administradores</h1>
+        <nav>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item">Tables</li>
+                <li class="breadcrumb-item active">General</li>
+            </ol>
+        </nav>
+    </div><!-- End Page Title -->
+
+    <section class="section">
+        <div class="row">
+            <div class="col-lg-6">
+
+                <div class="card">
+                    <div class="card-body">
+
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th scope="col">ID</th>
+                                    <th scope="col">Nombre</th>
+                                    <th scope="col">Correo</th>
+                                    <th scope="col">Activo</th>
+                                    <th scope="col">Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var admin in Model)
+                                {
+                                    <tr>
+                                        <td>@admin.Id_Administrador</td>
+                                        <td>@admin.Nombre</td>
+                                        <td>@admin.Correo</td>
+                                        <td>@admin.Activo</td>
+                                        <td>
+                                            <a href="@Url.Action("Edit", new { id = admin.Id_Administrador })">Editar</a> |
+                                            <a href="@Url.Action("Deactivate", new { id = admin.Id_Administrador })">Eliminar</a>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+</main>
+
+
+
+
+

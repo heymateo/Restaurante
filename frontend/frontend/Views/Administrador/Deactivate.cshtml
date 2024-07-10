@@ -1,0 +1,16 @@
+﻿@model frontend.Models.AdministradorModel
+
+<h1>Desactivar Administrador</h1>
+
+<h3>¿Estás seguro de que deseas desactivar este administrador?</h3>
+<div>
+    <h4>@Model.Nombre</h4>
+    <p>ID: @Model.Id_Administrador</p>
+    <p>Correo: @Model.Correo</p>
+</div>
+
+<form asp-action="DeactivateConfirmed" method="post">
+    <input type="hidden" asp-for="Id_Administrador" />
+    <button type="submit" class="btn btn-warning">Desactivar</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+</form>

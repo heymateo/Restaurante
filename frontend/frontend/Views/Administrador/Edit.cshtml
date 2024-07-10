@@ -1,0 +1,24 @@
+﻿@model frontend.Models.AdministradorModel
+
+<h1>Editar Administrador</h1>
+
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="Id_Administrador" />
+    <div class="form-group">
+        <label asp-for="Nombre"></label>
+        <input asp-for="Nombre" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Correo"></label>
+        <input asp-for="Correo" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Contrasena"></label>
+        <input asp-for="Contrasena" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Activo"></label>
+        <input asp-for="Activo" type="checkbox" />
+    </div>
+    <button type="submit" class="btn btn-primary">Guardar Cambios</button>
+</form>
