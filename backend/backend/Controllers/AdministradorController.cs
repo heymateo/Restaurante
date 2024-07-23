@@ -89,7 +89,7 @@ namespace backend.Controllers
             admin.Activo = false;
             await _context.SaveChangesAsync();
 
-            return RedirectToAction("GetAdmins");
+            return NoContent();
         }
     }
 }

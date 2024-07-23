@@ -89,7 +89,7 @@ namespace backend.Controllers
             chef.Activo = false;
             await _context.SaveChangesAsync();
 
-            return RedirectToAction("GetChefs");
+            return NoContent();
         }
     }
 }

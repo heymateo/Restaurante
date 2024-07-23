@@ -86,7 +86,7 @@ namespace backend.Controllers
             empleado.Activo = false;
             await _context.SaveChangesAsync();
 
-            return RedirectToAction("GetEmpleados");
+            return NoContent();
         }
     }
 }
