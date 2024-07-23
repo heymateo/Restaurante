@@ -27,68 +27,105 @@ namespace backend.Models
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            // Configurar relación uno a uno entre Orden y Cuenta
-            modelBuilder.Entity<Cuenta>()
-                .HasOne(o => o.Orden)
+            // Configurar tabla Cuenta
+            modelBuilder.Entity<Cuenta>(entity =>
+            {
+                entity.HasKey(c => c.Id_Cuenta);
+
+                entity.HasOne(o => o.Orden)
                 .WithOne(c => c.Cuenta)
                 .HasForeignKey<Cuenta>(c => c.Id_Orden);
+            });
 
-            // Configurar relación muchos a uno entre Orden y Cliente
-            modelBuilder.Entity<Orden>()
-                .HasOne(o => o.Cliente)
-                .WithMany()
+            // Configurar tabla Orden
+            modelBuilder.Entity<Orden>(entity =>
+            {
+                entity.HasKey(c => c.Id_Orden);
+
+                entity.HasOne(o => o.Cliente)
+                .WithMany(c => c.Ordenes)
                 .HasForeignKey(d => d.Id_Cliente);
 
-            // Configurar relación muchos a uno entre Orden y Chef
-            modelBuilder.Entity<Orden>()
-                .HasOne(o => o.Chef)
-                .WithMany()
+                entity.HasOne(o => o.Chef)
+                .WithMany(c => c.Ordenes)
                 .HasForeignKey(d => d.Id_Chef);
 
-            // Configurar relación muchos a uno entre Orden y Empleado
-            modelBuilder.Entity<Orden>()
-                .HasOne(o => o.Empleado)
-                .WithMany()
+                entity.HasOne(o => o.Empleado)
+                .WithMany(c => c.Ordenes)
                 .HasForeignKey(d => d.Id_Empleado);
 
-            // Configurar relación uno a uno entre Orden y Mesa
-            modelBuilder.Entity<Orden>()
-                .HasOne(o => o.Mesa)
+                entity.HasOne(o => o.DetalleOrden)
+                .WithOne(d => d.Orden)
+                .HasForeignKey<DetalleOrden>(e => e.Id_Orden)
+                .HasConstraintName("FK_DetalleOrden_Orden");
+
+                entity.HasOne(o => o.Mesa)
                 .WithOne(m => m.Orden)
                 .HasForeignKey<Mesa>(d => d.Id_Mesa);
+            });
 
-            // Configurar relación uno a uno entre Orden y DetalleOrden
-            modelBuilder.Entity<Orden>()
-               .HasOne(o => o.DetalleOrden)
-               .WithOne(d => d.Orden)
-               .HasForeignKey<DetalleOrden>(d => d.Id_Detalle_Orden);
+            // Configurar tabla DetalleOrden
+            modelBuilder.Entity<DetalleOrden>(entity =>
+            {
+                entity.HasKey(c => c.Id_Detalle_Orden);
 
-            // Configurar relación muchos a uno entre DetalleOrden y Platillo
-            modelBuilder.Entity<DetalleOrden>()
-                .HasOne(d => d.Platillo)
-                .WithMany()
-                .HasForeignKey(d => d.Id_Platillo)
-                .OnDelete(DeleteBehavior.Restrict); // Opción para NO ACTION;
+                entity.Property(a => a.Precio).HasPrecision(7, 2);
 
-            // Configurar relación muchos a uno entre DetalleOrden y Bebida
-            modelBuilder.Entity<DetalleOrden>()
-                .HasOne(d => d.Bebida)
-                .WithMany()
-                .HasForeignKey(d => d.Id_Bebida)
-                .OnDelete(DeleteBehavior.Restrict); // Opción para NO ACTION;
+                entity.HasMany(d => d.Platillos)
+                .WithMany(p => p.DetalleOrdenes)
+                .UsingEntity<Dictionary<string, object>>(
+                "DetalleOrdenPlatillo", // Nombre de la tabla intermedia
+                j => j
+                    .HasOne<Platillo>()
+                    .WithMany()
+                    .HasForeignKey("Id_Platillo")
+                    .OnDelete(DeleteBehavior.Cascade),
+                j => j
+                    .HasOne<DetalleOrden>()
+                    .WithMany()
+                    .HasForeignKey("Id_Detalle_Orden")
+                    .OnDelete(DeleteBehavior.Cascade));
 
-            // Configurar relación uno a muchos entre Platillo y Categoria
-            modelBuilder.Entity<Platillo>()
-                .HasOne(p => p.Categoria)
+                entity.HasMany(d => d.Bebidas)
+                .WithMany(b => b.DetalleOrdenes)
+                .UsingEntity<Dictionary<string, object>>(
+                "DetalleOrdenBebida", // Nombre de la tabla intermedia
+                j => j
+                    .HasOne<Bebida>()
+                    .WithMany()
+                    .HasForeignKey("Id_Bebida")
+                    .OnDelete(DeleteBehavior.Cascade),
+                j => j
+                    .HasOne<DetalleOrden>()
+                    .WithMany()
+                    .HasForeignKey("Id_Detalle_Orden")
+                    .OnDelete(DeleteBehavior.Cascade));
+            });
+
+            // Configurar tabla Platillo
+            modelBuilder.Entity<Platillo>(entity =>
+            {
+                entity.HasKey(c => c.Id_Platillo);
+
+                entity.Property(a => a.Precio).HasPrecision(7, 2);
+
+                entity.HasOne(p => p.Categoria)
                 .WithMany(c => c.Platillos)
-                .HasForeignKey(p => p.Id_Categoria);
+                .HasForeignKey(a => a.Id_Categoria);
+            });
 
-            // Configurar relación uno a muchos entre Bebida y Categoria
-            modelBuilder.Entity<Bebida>()
-                .HasOne(b => b.Categoria)
+            // Configurar tabla Bebida 
+            modelBuilder.Entity<Bebida>(entity =>
+            {
+                entity.HasKey(c => c.Id_Bebida);
+
+                entity.Property(a => a.Precio).HasPrecision(7, 2);
+
+                entity.HasOne(b => b.Categoria)
                 .WithMany(c => c.Bebidas)
-                .HasForeignKey(b => b.Id_Categoria);
-
+                .HasForeignKey(e => e.Id_Categoria);
+            });
+                
             base.OnModelCreating(modelBuilder);
 
             SeedData(modelBuilder);
@@ -182,16 +219,16 @@ namespace backend.Models
                 new Mesa { Id_Mesa = 10, Disponible = false, Id_Cliente = 0, Activa = true });
 
             modelBuilder.Entity<Orden>().HasData(
-                new Orden { Id_Orden = 1, Fecha = DateTime.Now, Hora = DateTime.Now.TimeOfDay, Numero_Orden = 1, Mesero_Atendio = "Mesero1", Cantidad_Personas = 4, Cancelado = false, Id_Empleado = 1, Id_Cliente = 1, Id_Mesa = 1, Id_Chef = 1, Id_Cuenta = 1 },
-                new Orden { Id_Orden = 2, Fecha = DateTime.Now, Hora = DateTime.Now.TimeOfDay, Numero_Orden = 2, Mesero_Atendio = "Mesero2", Cantidad_Personas = 2, Cancelado = false, Id_Empleado = 2, Id_Cliente = 2, Id_Mesa = 2, Id_Chef = 2, Id_Cuenta = 2 },
-                new Orden { Id_Orden = 3, Fecha = DateTime.Now, Hora = DateTime.Now.TimeOfDay, Numero_Orden = 3, Mesero_Atendio = "Mesero3", Cantidad_Personas = 3, Cancelado = false, Id_Empleado = 3, Id_Cliente = 3, Id_Mesa = 3, Id_Chef = 3, Id_Cuenta = 3 },
-                new Orden { Id_Orden = 4, Fecha = DateTime.Now, Hora = DateTime.Now.TimeOfDay, Numero_Orden = 4, Mesero_Atendio = "Mesero4", Cantidad_Personas = 5, Cancelado = false, Id_Empleado = 4, Id_Cliente = 4, Id_Mesa = 4, Id_Chef = 4, Id_Cuenta = 4 },
-                new Orden { Id_Orden = 5, Fecha = DateTime.Now, Hora = DateTime.Now.TimeOfDay, Numero_Orden = 5, Mesero_Atendio = "Mesero5", Cantidad_Personas = 6, Cancelado = false, Id_Empleado = 5, Id_Cliente = 5, Id_Mesa = 5, Id_Chef = 5, Id_Cuenta = 5 },
-                new Orden { Id_Orden = 6, Fecha = DateTime.Now, Hora = DateTime.Now.TimeOfDay, Numero_Orden = 6, Mesero_Atendio = "Mesero6", Cantidad_Personas = 2, Cancelado = false, Id_Empleado = 1, Id_Cliente = 6, Id_Mesa = 6, Id_Chef = 2, Id_Cuenta = 6 },
-                new Orden { Id_Orden = 7, Fecha = DateTime.Now, Hora = DateTime.Now.TimeOfDay, Numero_Orden = 7, Mesero_Atendio = "Mesero7", Cantidad_Personas = 4, Cancelado = false, Id_Empleado = 2, Id_Cliente = 7, Id_Mesa = 7, Id_Chef = 3, Id_Cuenta = 7 },
-                new Orden { Id_Orden = 8, Fecha = DateTime.Now, Hora = DateTime.Now.TimeOfDay, Numero_Orden = 8, Mesero_Atendio = "Mesero8", Cantidad_Personas = 3, Cancelado = false, Id_Empleado = 3, Id_Cliente = 8, Id_Mesa = 8, Id_Chef = 4, Id_Cuenta = 8 },
-                new Orden { Id_Orden = 9, Fecha = DateTime.Now, Hora = DateTime.Now.TimeOfDay, Numero_Orden = 9, Mesero_Atendio = "Mesero9", Cantidad_Personas = 2, Cancelado = false, Id_Empleado = 4, Id_Cliente = 9, Id_Mesa = 9, Id_Chef = 1, Id_Cuenta = 9 },
-                new Orden { Id_Orden = 10, Fecha = DateTime.Now, Hora = DateTime.Now.TimeOfDay, Numero_Orden = 10, Mesero_Atendio = "Mesero10", Cantidad_Personas = 4, Cancelado = false, Id_Empleado = 5, Id_Cliente = 10, Id_Mesa = 10, Id_Chef = 5, Id_Cuenta = 10 });
+                new Orden { Id_Orden = 1, Fecha = DateTime.Now, Hora = DateTime.Now.TimeOfDay, Numero_Orden = 1, Cantidad_Personas = 4, Cancelado = false, Id_Empleado = 1, Id_Cliente = 1, Id_Mesa = 1, Id_Chef = 1},
+                new Orden { Id_Orden = 2, Fecha = DateTime.Now, Hora = DateTime.Now.TimeOfDay, Numero_Orden = 2, Cantidad_Personas = 2, Cancelado = false, Id_Empleado = 2, Id_Cliente = 2, Id_Mesa = 2, Id_Chef = 2},
+                new Orden { Id_Orden = 3, Fecha = DateTime.Now, Hora = DateTime.Now.TimeOfDay, Numero_Orden = 3, Cantidad_Personas = 3, Cancelado = false, Id_Empleado = 3, Id_Cliente = 3, Id_Mesa = 3, Id_Chef = 3},
+                new Orden { Id_Orden = 4, Fecha = DateTime.Now, Hora = DateTime.Now.TimeOfDay, Numero_Orden = 4, Cantidad_Personas = 5, Cancelado = false, Id_Empleado = 4, Id_Cliente = 4, Id_Mesa = 4, Id_Chef = 4},
+                new Orden { Id_Orden = 5, Fecha = DateTime.Now, Hora = DateTime.Now.TimeOfDay, Numero_Orden = 5, Cantidad_Personas = 6, Cancelado = false, Id_Empleado = 5, Id_Cliente = 5, Id_Mesa = 5, Id_Chef = 5},
+                new Orden { Id_Orden = 6, Fecha = DateTime.Now, Hora = DateTime.Now.TimeOfDay, Numero_Orden = 6, Cantidad_Personas = 2, Cancelado = false, Id_Empleado = 1, Id_Cliente = 6, Id_Mesa = 6, Id_Chef = 2},
+                new Orden { Id_Orden = 7, Fecha = DateTime.Now, Hora = DateTime.Now.TimeOfDay, Numero_Orden = 7, Cantidad_Personas = 4, Cancelado = false, Id_Empleado = 2, Id_Cliente = 7, Id_Mesa = 7, Id_Chef = 3},
+                new Orden { Id_Orden = 8, Fecha = DateTime.Now, Hora = DateTime.Now.TimeOfDay, Numero_Orden = 8, Cantidad_Personas = 3, Cancelado = false, Id_Empleado = 3, Id_Cliente = 8, Id_Mesa = 8, Id_Chef = 4},
+                new Orden { Id_Orden = 9, Fecha = DateTime.Now, Hora = DateTime.Now.TimeOfDay, Numero_Orden = 9, Cantidad_Personas = 2, Cancelado = false, Id_Empleado = 4, Id_Cliente = 9, Id_Mesa = 9, Id_Chef = 1},
+                new Orden { Id_Orden = 10, Fecha = DateTime.Now, Hora = DateTime.Now.TimeOfDay, Numero_Orden = 10, Cantidad_Personas = 4, Cancelado = false, Id_Empleado = 5, Id_Cliente = 10, Id_Mesa = 10, Id_Chef = 5});
 
             modelBuilder.Entity<DetalleOrden>().HasData(
                 new DetalleOrden { Id_Detalle_Orden = 1, Id_Orden = 1, Id_Platillo = 1, Cantidad_Platillo = 2, Id_Bebida = 1, Cantidad_Bebida = 1, Precio = 100.00m },

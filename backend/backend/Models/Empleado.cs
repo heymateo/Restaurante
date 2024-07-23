@@ -13,13 +13,14 @@ namespace backend.Models
         public string Nombre { get; set; }
 
         [Required(ErrorMessage = "Es requerido")]
-        [DataType(DataType.EmailAddress, ErrorMessage = "Formato inválido")]
+        [EmailAddress(ErrorMessage = "Formato inválido")]
+        [DataType(DataType.EmailAddress)]
         public string Correo { get; set; }
         [Required(ErrorMessage = "Es requerido")]
         [DataType(DataType.Password)]
         public string Contrasena { get; set; }
         [Required(ErrorMessage = "Es requerido")]
         public bool Activo { get; set; }
-        public IEnumerable<Orden> Ordenes { get; set; } 
+        public ICollection<Orden> Ordenes { get; set; } 
     }
 }

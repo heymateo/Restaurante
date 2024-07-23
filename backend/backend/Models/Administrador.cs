@@ -12,7 +12,8 @@ namespace backend.Models
         [StringLength(20, ErrorMessage = "Máximo 20 caracteres")]
         public string Nombre { get; set; }
         [Required(ErrorMessage = "Es requerido")]
-        [DataType(DataType.EmailAddress, ErrorMessage = "Formato inválido")]
+        [EmailAddress(ErrorMessage = "Formato inválido")]
+        [DataType(DataType.EmailAddress)]
         public string Correo { get; set; }
         [Required(ErrorMessage = "Es requerido")]
         [DataType(DataType.Password)]

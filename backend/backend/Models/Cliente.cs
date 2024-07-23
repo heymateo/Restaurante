@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.AspNetCore.Mvc.ModelBinding;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace backend.Models
@@ -9,11 +10,12 @@ namespace backend.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id_Cliente { get; set; }
         [Required(ErrorMessage = "Es requerido")]
-        [StringLength(20, ErrorMessage = "Máximo 20 caracteres")]
+        [StringLength(40, ErrorMessage = "Máximo 40 caracteres")]
         public string Nombre { get; set; }
         [Required(ErrorMessage = "Es requerido")]
-        [StringLength(30, ErrorMessage = "Máximo 30 caracteres")]
+        [StringLength(40, ErrorMessage = "Máximo 40 caracteres")]
         public string Apellido { get; set; }
-        public IEnumerable<Orden> Ordenes { get; set; } // Para ver la lista
+        [BindNever]
+        public ICollection<Orden> Ordenes { get; set; } // Para ver la lista
     }
 }
