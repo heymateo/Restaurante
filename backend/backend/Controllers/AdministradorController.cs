@@ -1,4 +1,5 @@
 ﻿using backend.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -17,12 +18,14 @@ namespace backend.Controllers
             _context = context;
         }
 
+        //[Authorize(Roles = "Administrador")]
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Administrador>>> GetAdmins()
         {
             return await _context.Administrador.ToListAsync();
         }
 
+        //[Authorize(Roles = "Administrador")]
         [HttpGet("{id}")]
         public async Task<ActionResult<Administrador>> GetAdmin(int id)
         {
@@ -34,6 +37,7 @@ namespace backend.Controllers
             return admin;
         }
 
+        //[Authorize(Roles = "Administrador")]
         [HttpPost]
         public async Task<ActionResult<Administrador>> PostAdmin(Administrador admin)
         {
@@ -43,6 +47,7 @@ namespace backend.Controllers
             return CreatedAtAction("GetAdmin", new { id = admin.Id_Administrador }, admin);
         }
 
+        //[Authorize(Roles = "Administrador")]
         [HttpPut("{id}")]
         public async Task<IActionResult> PutAdmin(int id, [FromBody] Administrador admin)
         {
@@ -77,6 +82,7 @@ namespace backend.Controllers
             return _context.Administrador.Any(e => e.Id_Administrador == id);
         }
 
+        //[Authorize(Roles = "Administrador")]
         [HttpPut("deactivate/{id}")]
         public async Task<IActionResult> DeactivateAdmin(int id)
         {

@@ -1,9 +1,16 @@
+using frontend.Models;
 using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+// Add services to the container.
+builder.Services.AddDbContext<FrontendDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("FrontendDbContext")));
+
 
 // Añadir autenticación de servicios
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)

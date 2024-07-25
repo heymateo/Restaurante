@@ -3,16 +3,19 @@
   "WorkspaceRootPath": "C:\\Users\\mateo\\Desktop\\Restaurante\\backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A4CCAC7F-84D6-4831-BDE6-FD103CEB7534}|backend\\backend.csproj|c:\\users\\mateo\\desktop\\restaurante\\backend\\backend\\models\\orden.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A4CCAC7F-84D6-4831-BDE6-FD103CEB7534}|backend\\backend.csproj|solutionrelative:backend\\models\\orden.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4BB4B1E4-2FFA-4ADB-A433-373309BA419D}|..\\frontend\\frontend\\frontend.csproj|c:\\users\\mateo\\desktop\\restaurante\\frontend\\frontend\\views\\administrador\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A4CCAC7F-84D6-4831-BDE6-FD103CEB7534}|backend\\backend.csproj|c:\\users\\mateo\\desktop\\restaurante\\backend\\backend\\models\\detalleorden.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A4CCAC7F-84D6-4831-BDE6-FD103CEB7534}|backend\\backend.csproj|solutionrelative:backend\\models\\detalleorden.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4BB4B1E4-2FFA-4ADB-A433-373309BA419D}|..\\frontend\\frontend\\frontend.csproj|c:\\users\\mateo\\desktop\\restaurante\\frontend\\frontend\\views\\administrador\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A4CCAC7F-84D6-4831-BDE6-FD103CEB7534}|backend\\backend.csproj|c:\\users\\mateo\\desktop\\restaurante\\backend\\backend\\models\\backenddbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A4CCAC7F-84D6-4831-BDE6-FD103CEB7534}|backend\\backend.csproj|solutionrelative:backend\\models\\backenddbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\mateo\\Downloads\\NiceAdmin\\NiceAdmin\\forms-layouts.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BB4B1E4-2FFA-4ADB-A433-373309BA419D}|..\\frontend\\frontend\\frontend.csproj|c:\\users\\mateo\\desktop\\restaurante\\frontend\\frontend\\controllers\\administradorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BB4B1E4-2FFA-4ADB-A433-373309BA419D}|..\\frontend\\frontend\\frontend.csproj|c:\\users\\mateo\\desktop\\restaurante\\frontend\\frontend\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,45 +25,87 @@
       "DocumentGroups": [
         {
           "DockedWidth": 318,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 328,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "forms-layouts.html",
+              "DocumentMoniker": "C:\\Users\\mateo\\Downloads\\NiceAdmin\\NiceAdmin\\forms-layouts.html",
+              "RelativeDocumentMoniker": "..\\..\\..\\Downloads\\NiceAdmin\\NiceAdmin\\forms-layouts.html",
+              "ToolTip": "C:\\Users\\mateo\\Downloads\\NiceAdmin\\NiceAdmin\\forms-layouts.html",
+              "RelativeToolTip": "..\\..\\..\\Downloads\\NiceAdmin\\NiceAdmin\\forms-layouts.html",
+              "ViewState": "AQIAACkCAAAAAAAAAAAAAD4CAABEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-07-25T01:23:10.757Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AdministradorController.cs",
+              "DocumentMoniker": "C:\\Users\\mateo\\Desktop\\Restaurante\\frontend\\frontend\\Controllers\\AdministradorController.cs",
+              "RelativeDocumentMoniker": "..\\frontend\\frontend\\Controllers\\AdministradorController.cs",
+              "ToolTip": "C:\\Users\\mateo\\Desktop\\Restaurante\\frontend\\frontend\\Controllers\\AdministradorController.cs",
+              "RelativeToolTip": "..\\frontend\\frontend\\Controllers\\AdministradorController.cs",
+              "ViewState": "AQIAAD4AAAAAAAAAAAAowGkAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T22:26:08.755Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\mateo\\Desktop\\Restaurante\\frontend\\frontend\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "..\\frontend\\frontend\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\mateo\\Desktop\\Restaurante\\frontend\\frontend\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "..\\frontend\\frontend\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAHoAAAAAAAAAAAAIwN8AAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-24T18:00:21.044Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 328,
           "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Orden.cs",
-              "DocumentMoniker": "C:\\Users\\mateo\\Desktop\\Restaurante\\backend\\backend\\Models\\Orden.cs",
-              "RelativeDocumentMoniker": "backend\\Models\\Orden.cs",
-              "ToolTip": "C:\\Users\\mateo\\Desktop\\Restaurante\\backend\\backend\\Models\\Orden.cs",
-              "RelativeToolTip": "backend\\Models\\Orden.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAYwB0AAAATAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-21T23:30:54.341Z",
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\mateo\\Desktop\\Restaurante\\frontend\\frontend\\Views\\Administrador\\Edit.cshtml",
+              "RelativeDocumentMoniker": "..\\frontend\\frontend\\Views\\Administrador\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\mateo\\Desktop\\Restaurante\\frontend\\frontend\\Views\\Administrador\\Edit.cshtml",
+              "RelativeToolTip": "..\\frontend\\frontend\\Views\\Administrador\\Edit.cshtml",
+              "ViewState": "AQIAAC4AAAAAAAAAAAAIwDwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-25T01:31:18.888Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "DetalleOrden.cs",
-              "DocumentMoniker": "C:\\Users\\mateo\\Desktop\\Restaurante\\backend\\backend\\Models\\DetalleOrden.cs",
-              "RelativeDocumentMoniker": "backend\\Models\\DetalleOrden.cs",
-              "ToolTip": "C:\\Users\\mateo\\Desktop\\Restaurante\\backend\\backend\\Models\\DetalleOrden.cs",
-              "RelativeToolTip": "backend\\Models\\DetalleOrden.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAQwAwAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-21T22:53:59.623Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "BackendDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\mateo\\Desktop\\Restaurante\\backend\\backend\\Models\\BackendDbContext.cs",
-              "RelativeDocumentMoniker": "backend\\Models\\BackendDbContext.cs",
-              "ToolTip": "C:\\Users\\mateo\\Desktop\\Restaurante\\backend\\backend\\Models\\BackendDbContext.cs",
-              "RelativeToolTip": "backend\\Models\\BackendDbContext.cs",
-              "ViewState": "AQIAAEEAAAAAAAAAAAAAADsAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-17T17:06:02.991Z",
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\mateo\\Desktop\\Restaurante\\frontend\\frontend\\Views\\Administrador\\Create.cshtml",
+              "RelativeDocumentMoniker": "..\\frontend\\frontend\\Views\\Administrador\\Create.cshtml",
+              "ToolTip": "C:\\Users\\mateo\\Desktop\\Restaurante\\frontend\\frontend\\Views\\Administrador\\Create.cshtml",
+              "RelativeToolTip": "..\\frontend\\frontend\\Views\\Administrador\\Create.cshtml",
+              "ViewState": "AQIAABIAAAAAAAAAAAAIwBgAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-25T01:04:23.224Z",
               "EditorCaption": ""
             }
           ]

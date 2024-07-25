@@ -100,7 +100,7 @@ namespace frontend.Controllers
             return View(model);
         }
 
-        public async Task<IActionResult> Deactivate()
+        public async Task<IActionResult> DeactivateView()
         {
             return View();
         }

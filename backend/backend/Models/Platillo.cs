@@ -16,7 +16,7 @@ namespace backend.Models
         [Required(ErrorMessage = "Es requerido")]
         [Column(TypeName = "decimal(7, 2)")]
         public decimal Precio { get; set; }
-        public int Id_Categoria { get; set; }
+        public int? Id_Categoria { get; set; }
         [BindNever]
         public Categoria Categoria { get; set; } // Para navegación en el context
         [BindNever]
