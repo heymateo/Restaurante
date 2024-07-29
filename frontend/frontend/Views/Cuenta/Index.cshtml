@@ -1,0 +1,54 @@
+﻿@model IEnumerable<frontend.Models.CuentaModel>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id_Cliente)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Id_Orden)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Total)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cancelado)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id_Cliente)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id_Orden)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Total)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cancelado)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id_Cuenta">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id_Cuenta">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id_Cuenta">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
