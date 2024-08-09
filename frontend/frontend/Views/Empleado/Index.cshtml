@@ -1,0 +1,50 @@
+﻿@model List<backend.Models.Empleado>
+
+<main id="main" class="main">
+
+    <div class="col-lg-12">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Lista de Empleados</h5>
+                <p>
+                    Bienvenido a la sección de empleados. Aquí encontrará una lista completa de empleados registrados en el sistema.
+                    Desde esta página, puede editar la información de cada empleado, incluyendo su nombre, correo electrónico y otros detalles relevantes.
+                    Además, tiene la opción de desactivar empleados según sea necesario.
+                </p>
+
+                <!-- Table with stripped rows -->
+                <table class="table table-hover datatable">
+                    <thead>
+                        <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Correo</th>
+                            <th scope="col">Activo</th>
+                            <th scope="col">Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var emp in Model)
+                        {
+                            <tr>
+                                <tH scope="row">@emp.Id_Empleado</tH>
+                                <td>@emp.Nombre</td>
+                                <td>@emp.Correo</td>
+                                <td>@emp.Activo</td>
+                                <td class="btn-group" role="group">
+                                    <a type="button" class="btn btn-primary" href="@Url.Action("Edit", new { id = emp.Id_Empleado })">Editar</a>
+                                    <a type="button" class="btn btn-danger" href="@Url.Action("Deactivate", new { id = emp.Id_Empleado })">Desactivar</a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+                <!-- End Table with stripped rows -->
+
+            </div>
+        </div>
+    </div>
+
+
+
+</main><!-- End #main -->

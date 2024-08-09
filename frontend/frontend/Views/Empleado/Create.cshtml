@@ -1,4 +1,4 @@
-﻿@model backend.Models.Administrador
+﻿@model backend.Models.Empleado
 
 <main id="main" class="main">
 
@@ -6,28 +6,34 @@
 
         <div class="card">
             <div class="card-body">
-                <h5 class="card-title">Datatables</h5>
-                <p>Add lightweight datatables to your project with using the <a href="https://github.com/fiduswriter/Simple-DataTables" target="_blank">Simple DataTables</a> library. Just add <code>.datatable</code> class name to any table you wish to conver to a datatable. Check for <a href="https://fiduswriter.github.io/simple-datatables/demos/" target="_blank">more examples</a>.</p>
+                <h5 class="card-title">Crear Empleado</h5>
+                <p>
+                    Bienvenido a la sección de creación de empleados. Aquí puedes agregar nuevos empleados al sistema, proporcionando la
+                    información necesaria como nombre, correo electrónico y contraseña. Asegúrate de completar todos los campos requeridos para garantizar
+                    que los nuevos empleados tengan acceso adecuado y seguro a nuestras funciones.
+                </p>
 
                 <!-- Floating Labels Form -->
-                <form class="row g-3" asp-action="Edit" method="post">
-                    <input type="hidden" asp-for="Id_Administrador" />
+                <form class="row g-3" asp-action="Create" method="post">
                     <div class="col-md-12">
                         <div class="form-floating">
                             <input asp-for="Nombre" type="text" class="form-control" id="floatingName" placeholder="Nombre">
                             <label asp-for="Nombre"></label>
+                            <span asp-validation-for="Nombre" class="text-danger"></span>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-floating">
                             <input asp-for="Correo" type="email" class="form-control" id="floatingEmail" placeholder="Correo">
                             <label asp-for="Correo" for="floatingEmail"></label>
+                            <span asp-validation-for="Correo" class="text-danger"></span>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-floating">
                             <input asp-for="Contrasena" type="password" class="form-control" id="floatingPassword" placeholder="Contraseña">
                             <label asp-for="Contrasena" for="floatingPassword"></label>
+                            <span asp-validation-for="Contrasena" class="text-danger"></span>
                         </div>
                     </div>
 
@@ -37,13 +43,15 @@
                                 <br />
                                 <input asp-for="Activo" class="form-check-input" type="checkbox" id="gridCheck1">
                                 <label asp-for="Activo" class="form-check-label" for="gridCheck1"></label>
+                                <span asp-validation-for="Activo" class="text-danger"></span>
                             </div>
                         </div>
                     </div>
 
-                    <div class="text-center">
-                        <button type="submit" class="btn btn-primary">Guardar Cambios</button>
-                        <a type="button" class="btn btn-secondary" href="@Url.Action("Index","Administrador")">Atrás</a>
+                    <div class="btn-group" role="group">
+                        <button type="submit" class="btn btn-primary">Crear</button>
+                        <a asp-action="Index" asp-controller="Empleado" class="btn btn-secondary">Regresar</a>
+                        <button type="reset" class="btn btn-danger">Resetear</button>
                     </div>
                 </form><!-- End floating Labels Form -->
 

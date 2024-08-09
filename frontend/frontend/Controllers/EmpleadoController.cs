@@ -1,15 +1,14 @@
 ﻿using backend.Models;
-using Microsoft.AspNetCore.Authentication;
-using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using System.Security.Claims;
+using System.Net.Http;
 
 namespace frontend.Controllers
 {
-    public class AdministradorController : Controller
+    public class EmpleadoController : Controller
     {
         private readonly IHttpClientFactory _httpClientFactory;
-        public AdministradorController(IHttpClientFactory httpClientFactory) 
+        public EmpleadoController(IHttpClientFactory httpClientFactory)
         {
             _httpClientFactory = httpClientFactory;
         }
@@ -18,17 +17,17 @@ namespace frontend.Controllers
         public async Task<IActionResult> Index()
         {
             var client = _httpClientFactory.CreateClient();
-            var response = await client.GetAsync("https://localhost:7061/api/Administrador");
+            var response = await client.GetAsync("https://localhost:7061/api/Empleado");
 
             if (response.IsSuccessStatusCode)
             {
-                var administradores = await response.Content.ReadFromJsonAsync<List<Administrador>>();
-                return View(administradores);
+                var empleados = await response.Content.ReadFromJsonAsync<List<Empleado>>();
+                return View(empleados);
             }
             else
             {
                 // Manejar el error
-                return View(new List<Administrador>());
+                return View(new List<Empleado>());
             }
         }
 
@@ -41,20 +40,21 @@ namespace frontend.Controllers
         // Método para manejar la creación de nuevo administrador
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create(Administrador model)
+        public async Task<IActionResult> Create(Empleado model)
         {
             if (ModelState.IsValid)
             {
                 var client = _httpClientFactory.CreateClient();
-                var response = await client.PostAsJsonAsync("https://localhost:7061/api/Administrador", model);
+                var response = await client.PostAsJsonAsync("https://localhost:7061/api/Empleado", model);
 
                 if (response.IsSuccessStatusCode)
                 {
-                    return RedirectToAction(nameof(Index));
+                    return RedirectToAction("Index","Empleado");
                 }
                 else
                 {
-                    ModelState.AddModelError(string.Empty, "Error al crear el administrador.");
+                    ModelState.AddModelError(string.Empty, "Error al crear el empleado" +
+                        ".");
                 }
             }
             return View(model);
@@ -64,12 +64,12 @@ namespace frontend.Controllers
         public async Task<IActionResult> Edit(int id)
         {
             var client = _httpClientFactory.CreateClient();
-            var response = await client.GetAsync($"https://localhost:7061/api/Administrador/{id}");
+            var response = await client.GetAsync($"https://localhost:7061/api/Empleado/{id}");
 
             if (response.IsSuccessStatusCode)
             {
-                var administrador = await response.Content.ReadFromJsonAsync<Administrador>();
-                return View(administrador);
+                var empleado = await response.Content.ReadFromJsonAsync<Empleado>();
+                return View(empleado);
             }
             else
             {
@@ -81,12 +81,12 @@ namespace frontend.Controllers
         // Método para manejar la edición de un administrador
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, Administrador model)
+        public async Task<IActionResult> Edit(int id, Empleado model)
         {
             if (ModelState.IsValid)
             {
                 var client = _httpClientFactory.CreateClient();
-                var response = await client.PutAsJsonAsync($"https://localhost:7061/api/Administrador/{id}", model);
+                var response = await client.PutAsJsonAsync($"https://localhost:7061/api/Empleado/{id}", model);
 
                 if (response.IsSuccessStatusCode)
                 {
@@ -94,7 +94,7 @@ namespace frontend.Controllers
                 }
                 else
                 {
-                    ModelState.AddModelError(string.Empty, "Error al actualizar el administrador.");
+                    ModelState.AddModelError(string.Empty, "Error al actualizar el empleado.");
                 }
             }
             return View(model);
@@ -109,15 +109,15 @@ namespace frontend.Controllers
         public async Task<IActionResult> Deactivate(int id)
         {
             var client = _httpClientFactory.CreateClient();
-            var response = await client.GetAsync($"https://localhost:7061/api/Administrador/{id}");
+            var response = await client.GetAsync($"https://localhost:7061/api/Empleado/{id}");
 
             if (response.IsSuccessStatusCode)
             {
-                var administrador = await response.Content.ReadFromJsonAsync<Administrador>();
-                if (administrador != null)
+                var empleado = await response.Content.ReadFromJsonAsync<Empleado>();
+                if (empleado != null)
                 {
-                    administrador.Activo = false;
-                    var updateResponse = await client.PutAsJsonAsync($"https://localhost:7061/api/Administrador/{id}", administrador);
+                    empleado.Activo = false;
+                    var updateResponse = await client.PutAsJsonAsync($"https://localhost:7061/api/Empleado/{id}", empleado);
 
                     if (updateResponse.IsSuccessStatusCode)
                     {
@@ -125,20 +125,23 @@ namespace frontend.Controllers
                     }
                     else
                     {
-                        ModelState.AddModelError(string.Empty, "Error al desactivar el administrador.");
+                        ModelState.AddModelError(string.Empty, "Error al desactivar el empleado.");
                     }
                 }
                 else
                 {
-                    ModelState.AddModelError(string.Empty, "Administrador no encontrado.");
+                    ModelState.AddModelError(string.Empty, "Empleado no encontrado.");
                 }
             }
             else
             {
-                ModelState.AddModelError(string.Empty, "Error al obtener el administrador.");
+                ModelState.AddModelError(string.Empty, "Error al obtener el empleado.");
             }
 
             return RedirectToAction(nameof(Index));
         }
     }
+    
 }
+
+

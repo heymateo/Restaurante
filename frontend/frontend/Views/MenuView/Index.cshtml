@@ -1,0 +1,90 @@
+﻿@model frontend.Models.MenuViewModel
+
+<main id="main" class="main">
+
+    <section class="section">
+        <div class="row">
+            
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Platillos</h5>
+                    <p>
+                        ¡Bienvenido a la sección de gestión de platillos! Aquí puedes editar todos los platillos disponibles en nuestro menú.
+                        Proporciona detalles completos como el nombre del platillo, descripción, precio y categoría para garantizar que nuestros clientes tengan
+                        una experiencia culinaria excepcional. Utiliza esta herramienta para actualizar los platillos.
+                    </p>
+
+                    <!-- Table with hoverable rows -->
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th scope="col">Nombre</th>
+                                <th scope="col">Descripcion</th>
+                                <th scope="col">Precio</th>
+                                <th scope="col">Categoría</th>
+                                <th scope="col">Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var platillo in Model.Platillos)
+                            {
+                                <tr>
+                                    <th scope="row">@platillo.Nombre</th>
+                                    <td>@platillo.Descripcion</td>
+                                    <td>@platillo.Precio</td>
+                                    <td>@platillo.Categoria?.Nombre</td>
+                                    <td class="text-center">
+                                        <a type="button" class="btn btn-primary" href="@Url.Action("Edit", "Platillo", new { id = platillo.Id_Platillo })">Editar</a>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                    <!-- End Table with hoverable rows -->
+
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Bebidas</h5>
+                    <p>
+                        ¡Bienvenido a la sección de gestión de bebidas! Aquí puedes editar todas las bebidas disponibles en nuestro menú.
+                        Puedes especificar detalles importantes como el nombre de la bebida, descripción, precio y categoría para asegurarte de que nuestros
+                        clientes tengan una amplia variedad de opciones refrescantes y satisfactorias. Usa esta herramienta para actualizar el catálogo de bebidas.
+                    </p>
+
+                    <!-- Table with hoverable rows -->
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th scope="col">Nombre</th>
+                                <th scope="col">Descripcion</th>
+                                <th scope="col">Precio</th>
+                                <th scope="col">Categoría</th>
+                                <th scope="col">Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var bebida in Model.Bebidas)
+                            {
+                                <tr>
+                                    <th scope="row">@bebida.Nombre</th>
+                                    <td>@bebida.Descripcion</td>
+                                    <td>@bebida.Precio</td>
+                                    <td>@bebida.Categoria?.Nombre</td>
+                                    <td class="text-center">
+                                        <a type="button" class="btn btn-primary" href="@Url.Action("Edit", "Bebida", new { id = bebida.Id_Bebida })">Editar</a>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                    <!-- End Table with hoverable rows -->
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>

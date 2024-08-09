@@ -1,0 +1,65 @@
+﻿@model backend.Models.Platillo
+ 
+<main id="main" class="main">
+
+    <section class="section">
+        <div class="row">
+            <div class="col-lg-12">
+
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Editar platillo</h5>
+                        <p>
+                            ¡Bienvenido a la sección de edición de platillos! Aquí puedes actualizar la información de los platillos disponibles en nuestro menú. 
+                            Puedes modificar detalles como el nombre, descripción, precio, y categoría del platillo para asegurarte de que toda la información 
+                            esté siempre actualizada y refleje nuestras mejores opciones culinarias.
+                        </p>
+
+                        <form class="row g-3" asp-action="Edit" method="put">
+                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                            <input type="hidden" asp-for="Id_Platillo" />
+
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input asp-for="Nombre" type="text" class="form-control" id="floatingName" placeholder="Nombre">
+                                    <label asp-for="Nombre"></label>
+                                    <span asp-validation-for="Nombre" class="text-danger"></span>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <div class="form-floating">
+                                    <textarea asp-for="Descripcion" type="text" class="form-control" id="floatingName" placeholder="Descripcion" style="height: 100px"></textarea>
+
+                                    <label asp-for="Descripcion"></label>
+                                    <span asp-validation-for="Descripcion" class="text-danger"></span>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text">₡</span>
+                                    <input asp-for="Precio" type="text" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input asp-for="Categoria.Nombre" type="text" class="form-control" id="floatingCategoria" placeholder="Categoria.Nombre">
+                                    <label asp-for="Categoria.Nombre"></label>
+                                    <span asp-validation-for="Categoria.Nombre" class="text-danger"></span>
+                                </div>
+                            </div>
+
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary">Editar</button>
+                                <a asp-action="Index" asp-controller="MenuView" class="btn btn-secondary">Regresar</a>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
