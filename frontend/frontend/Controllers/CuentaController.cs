@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using frontend.Models;
+using backend.Models;
 
 namespace frontend.Controllers
 {
@@ -25,13 +25,13 @@ namespace frontend.Controllers
 
             if (response.IsSuccessStatusCode)
             {
-                var administradores = await response.Content.ReadFromJsonAsync<List<CuentaModel>>();
+                var administradores = await response.Content.ReadFromJsonAsync<List<Cuenta>>();
                 return View(administradores);
             }
             else
             {
                 // Manejar el error
-                return View(new List<CuentaModel>());
+                return View(new List<Cuenta>());
             }
         }
 

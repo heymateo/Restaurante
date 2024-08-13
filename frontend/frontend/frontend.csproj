@@ -24,6 +24,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\backend\Models\Models.csproj" />
+    <ProjectReference Include="..\..\Models\Models.csproj" />
   </ItemGroup>
 
 </Project>

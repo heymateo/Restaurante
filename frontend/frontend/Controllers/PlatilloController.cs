@@ -49,7 +49,7 @@ namespace frontend.Controllers
 
             if (response.IsSuccessStatusCode)
             {
-                model.Categoria = await response.Content.ReadFromJsonAsync<Categoria>();
+                model.ListaCategorias = await response.Content.ReadFromJsonAsync<List<Categoria>>();
             }
             else
             {
