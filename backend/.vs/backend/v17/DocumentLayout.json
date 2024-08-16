@@ -3,21 +3,11 @@
   "WorkspaceRootPath": "C:\\Users\\mateo\\Desktop\\Restaurante\\backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D0FF8025-8F08-4D22-86E5-2B7D7237EB06}|..\\Models\\Models.csproj|c:\\users\\mateo\\desktop\\restaurante\\models\\platillo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D0FF8025-8F08-4D22-86E5-2B7D7237EB06}|..\\Models\\Models.csproj|c:\\users\\mateo\\desktop\\restaurante\\models\\backenddbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A4CCAC7F-84D6-4831-BDE6-FD103CEB7534}|backend\\backend.csproj|c:\\users\\mateo\\desktop\\restaurante\\backend\\backend\\controllers\\bebidacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A4CCAC7F-84D6-4831-BDE6-FD103CEB7534}|backend\\backend.csproj|solutionrelative:backend\\controllers\\bebidacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BB4B1E4-2FFA-4ADB-A433-373309BA419D}|..\\frontend\\frontend\\frontend.csproj|c:\\users\\mateo\\desktop\\restaurante\\frontend\\frontend\\models\\menuviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A4CCAC7F-84D6-4831-BDE6-FD103CEB7534}|backend\\backend.csproj|c:\\users\\mateo\\desktop\\restaurante\\backend\\backend\\controllers\\platillocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A4CCAC7F-84D6-4831-BDE6-FD103CEB7534}|backend\\backend.csproj|solutionrelative:backend\\controllers\\platillocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BB4B1E4-2FFA-4ADB-A433-373309BA419D}|..\\frontend\\frontend\\frontend.csproj|c:\\users\\mateo\\desktop\\restaurante\\frontend\\frontend\\controllers\\menuviewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A4CCAC7F-84D6-4831-BDE6-FD103CEB7534}|backend\\backend.csproj|c:\\users\\mateo\\desktop\\restaurante\\backend\\backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4CCAC7F-84D6-4831-BDE6-FD103CEB7534}|backend\\backend.csproj|solutionrelative:backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,79 +17,42 @@
       "DocumentGroups": [
         {
           "DockedWidth": 374,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
-            },
+            }
+          ]
+        },
+        {
+          "DockedWidth": 374,
+          "SelectedChildIndex": 1,
+          "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\mateo\\Desktop\\Restaurante\\backend\\backend\\Program.cs",
+              "RelativeDocumentMoniker": "backend\\Program.cs",
+              "ToolTip": "C:\\Users\\mateo\\Desktop\\Restaurante\\backend\\backend\\Program.cs",
+              "RelativeToolTip": "backend\\Program.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-16T15:38:03.272Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Platillo.cs",
-              "DocumentMoniker": "C:\\Users\\mateo\\Desktop\\Restaurante\\Models\\Platillo.cs",
-              "RelativeDocumentMoniker": "..\\Models\\Platillo.cs",
-              "ToolTip": "C:\\Users\\mateo\\Desktop\\Restaurante\\Models\\Platillo.cs",
-              "RelativeToolTip": "..\\Models\\Platillo.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAQwB0AAAAUAAAA",
+              "Title": "BackendDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\mateo\\Desktop\\Restaurante\\Models\\BackendDbContext.cs",
+              "RelativeDocumentMoniker": "..\\Models\\BackendDbContext.cs",
+              "ToolTip": "C:\\Users\\mateo\\Desktop\\Restaurante\\Models\\BackendDbContext.cs",
+              "RelativeToolTip": "..\\Models\\BackendDbContext.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAIwBUAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-13T03:31:09.707Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MenuViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\mateo\\Desktop\\Restaurante\\frontend\\frontend\\Models\\MenuViewModel.cs",
-              "RelativeDocumentMoniker": "..\\frontend\\frontend\\Models\\MenuViewModel.cs",
-              "ToolTip": "C:\\Users\\mateo\\Desktop\\Restaurante\\frontend\\frontend\\Models\\MenuViewModel.cs",
-              "RelativeToolTip": "..\\frontend\\frontend\\Models\\MenuViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-13T03:29:56.741Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "BebidaController.cs",
-              "DocumentMoniker": "C:\\Users\\mateo\\Desktop\\Restaurante\\backend\\backend\\Controllers\\BebidaController.cs",
-              "RelativeDocumentMoniker": "backend\\Controllers\\BebidaController.cs",
-              "ToolTip": "C:\\Users\\mateo\\Desktop\\Restaurante\\backend\\backend\\Controllers\\BebidaController.cs",
-              "RelativeToolTip": "backend\\Controllers\\BebidaController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-13T03:28:47.492Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MenuViewController.cs",
-              "DocumentMoniker": "C:\\Users\\mateo\\Desktop\\Restaurante\\frontend\\frontend\\Controllers\\MenuViewController.cs",
-              "RelativeDocumentMoniker": "..\\frontend\\frontend\\Controllers\\MenuViewController.cs",
-              "ToolTip": "C:\\Users\\mateo\\Desktop\\Restaurante\\frontend\\frontend\\Controllers\\MenuViewController.cs",
-              "RelativeToolTip": "..\\frontend\\frontend\\Controllers\\MenuViewController.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAYwBYAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-13T03:09:23.108Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PlatilloController.cs",
-              "DocumentMoniker": "C:\\Users\\mateo\\Desktop\\Restaurante\\backend\\backend\\Controllers\\PlatilloController.cs",
-              "RelativeDocumentMoniker": "backend\\Controllers\\PlatilloController.cs",
-              "ToolTip": "C:\\Users\\mateo\\Desktop\\Restaurante\\backend\\backend\\Controllers\\PlatilloController.cs",
-              "RelativeToolTip": "backend\\Controllers\\PlatilloController.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAuwA8AAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-13T03:07:41.089Z",
+              "WhenOpened": "2024-08-16T15:32:51.401Z",
               "EditorCaption": ""
             }
           ]

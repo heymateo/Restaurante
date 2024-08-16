@@ -1,4 +1,5 @@
 ﻿using backend.Models;
+using backend.DTOs;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -33,12 +34,19 @@ namespace backend.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<Mesa>> PostMesa(Mesa mesa)
+        public async Task<ActionResult<Mesa>> PostMesa(MesaDTO mesaDTO)
         {
+            var mesa = new Mesa
+            {
+                Numero_Mesa = mesaDTO.Numero_Mesa,
+                Disponible = mesaDTO.Disponible,
+                Activa = mesaDTO.Activa
+            };
+
             _context.Mesa.Add(mesa);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetMesa", new { id = mesa.Id_Mesa }, mesa);
+            return CreatedAtAction("GetMesas", new { id = mesa.Id_Mesa }, mesa);
         }
 
         [HttpPut("{id}")]
