@@ -23,12 +23,14 @@ namespace backend.Models
         public int? Id_Platillo { get; set; }
         [BindNever]
         [NotMapped]
+        [JsonIgnore]
         [ForeignKey("Id_Bebida")]
-        public Bebida Bebida { get; set; }
+        public Bebida? Bebida { get; set; }
         [BindNever]
         [NotMapped]
+        [JsonIgnore]
         [ForeignKey("Id_Platillo")]
-        public Platillo Platillo { get; set; }
+        public Platillo? Platillo { get; set; }
         [BindNever]
         [JsonIgnore]
         public IEnumerable<Bebida> Bebidas { get; set; } // Para acceder, cambiar, saber el largo de esta lista

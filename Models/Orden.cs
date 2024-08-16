@@ -2,11 +2,13 @@
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 
 namespace backend.Models
 {
     public class Orden
     {
+        [Key]
         public int Id_Orden { get; set; }
 
         [Required(ErrorMessage = "Es requerido")]
@@ -31,29 +33,35 @@ namespace backend.Models
         public int Id_Detalle_Orden { get; set; }
         [BindNever]
         public DetalleOrden DetalleOrden { get; set; }
-        [BindNever]
-        public ICollection<DetalleOrden> DetalleOrdenes { get; set; }
 
         [BindNever]
         public int Id_Empleado { get; set; }
         [BindNever]
+        [JsonIgnore]
         public Empleado Empleado { get; set; }
 
         [BindNever]
         public int Id_Cliente { get; set; }
         [BindNever]
+        [JsonIgnore]
+
         public Cliente Cliente { get; set; }
 
         [BindNever]
         public int Id_Mesa { get; set; }
         [BindNever]
+        [JsonIgnore]
         public Mesa Mesa { get; set; }
 
         [BindNever]
         public int Id_Chef { get; set; }
         [BindNever]
+        [JsonIgnore]
+
         public Chef Chef { get; set; } 
         [BindNever]
+        [JsonIgnore]
+
         public Cuenta Cuenta { get; set; } 
     }
 }

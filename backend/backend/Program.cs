@@ -18,7 +18,7 @@ builder.Services.AddCors(options =>
 
 builder.Services.AddDbContext<BackendDbContext>(options =>
 {
-    options.UseSqlServer(builder.Configuration.GetConnectionString("BackendDbContext"));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("BackendDbContext"), b => b.MigrationsAssembly("backend"));
 });
 
 var app = builder.Build();

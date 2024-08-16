@@ -21,7 +21,7 @@ namespace backend.Models
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("RestauranteDbContext");
+                optionsBuilder.UseSqlServer("BackendDbContext");
             }
         }
 
@@ -208,15 +208,15 @@ namespace backend.Models
                 new Bebida { Id_Bebida = 10, Nombre = "Daiquiri de Fresa Frozen", Descripcion = "Cóctel frozen con ron blanco, fresas frescas, jugo de limón y azúcar.", Precio = 6800, Id_Categoria = 4 });
             
             modelBuilder.Entity<Mesa>().HasData(
-                new Mesa { Id_Mesa = 2, Disponible = true, Id_Cliente = 2, Activa = true },
-                new Mesa { Id_Mesa = 3, Disponible = true, Id_Cliente = 3, Activa = true },
-                new Mesa { Id_Mesa = 4, Disponible = true, Id_Cliente = 4, Activa = true },
-                new Mesa { Id_Mesa = 5, Disponible = true, Id_Cliente = 5, Activa = true },
-                new Mesa { Id_Mesa = 6, Disponible = true, Id_Cliente = 6, Activa = true },
-                new Mesa { Id_Mesa = 7, Disponible = true, Id_Cliente = 7, Activa = true },
-                new Mesa { Id_Mesa = 8, Disponible = true, Id_Cliente = 8, Activa = true },
-                new Mesa { Id_Mesa = 9, Disponible = true, Id_Cliente = 9, Activa = true },
-                new Mesa { Id_Mesa = 10, Disponible = false, Id_Cliente = 0, Activa = true });
+                new Mesa { Id_Mesa = 2, Numero_Mesa = "2", Disponible = true, Activa = true },
+                new Mesa { Id_Mesa = 3, Numero_Mesa = "5", Disponible = true, Activa = true },
+                new Mesa { Id_Mesa = 4, Numero_Mesa = "1", Disponible = true, Activa = true },
+                new Mesa { Id_Mesa = 5, Numero_Mesa = "8", Disponible = true, Activa = true },
+                new Mesa { Id_Mesa = 6, Numero_Mesa = "3", Disponible = true, Activa = true },
+                new Mesa { Id_Mesa = 7, Numero_Mesa = "6", Disponible = true, Activa = true },
+                new Mesa { Id_Mesa = 8, Numero_Mesa = "9", Disponible = true, Activa = true },
+                new Mesa { Id_Mesa = 9, Numero_Mesa = "4", Disponible = true, Activa = true },
+                new Mesa { Id_Mesa = 10, Numero_Mesa = "7", Disponible = false, Activa = true });
 
             modelBuilder.Entity<Orden>().HasData(
                 new Orden { Id_Orden = 1, Fecha = DateTime.Now, Hora = DateTime.Now.TimeOfDay, Numero_Orden = 1, Cantidad_Personas = 4, Cancelado = false, Id_Empleado = 1, Id_Cliente = 1, Id_Mesa = 1, Id_Chef = 1},
