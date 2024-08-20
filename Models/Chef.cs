@@ -23,6 +23,6 @@ namespace backend.Models
         [Required(ErrorMessage = "Es requerido")]
         [DisplayName("Activar")]
         public bool Activo { get; set; }
-        public ICollection<OrdenModel>? Ordenes { get; set; } // Para acceder, cambiar, saber el largo de esta colección
+        public ICollection<Orden>? Ordenes { get; set; } // Para acceder, cambiar, saber el largo de esta colección
     }
 }
