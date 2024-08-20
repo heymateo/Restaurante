@@ -137,3 +137,14 @@ C:\Users\mateo\Desktop\Restaurante\backend\backend\obj\Debug\net8.0\refint\backe
 C:\Users\mateo\Desktop\Restaurante\backend\backend\obj\Debug\net8.0\backend.pdb
 C:\Users\mateo\Desktop\Restaurante\backend\backend\obj\Debug\net8.0\backend.genruntimeconfig.cache
 C:\Users\mateo\Desktop\Restaurante\backend\backend\obj\Debug\net8.0\ref\backend.dll
+C:\Users\arian\Desktop\Restaurante\backend\backend\obj\Debug\net8.0\backend.csproj.AssemblyReference.cache
+C:\Users\arian\Desktop\Restaurante\backend\backend\obj\Debug\net8.0\backend.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\arian\Desktop\Restaurante\backend\backend\obj\Debug\net8.0\backend.AssemblyInfoInputs.cache
+C:\Users\arian\Desktop\Restaurante\backend\backend\obj\Debug\net8.0\backend.AssemblyInfo.cs
+C:\Users\arian\Desktop\Restaurante\backend\backend\obj\Debug\net8.0\backend.csproj.CoreCompileInputs.cache
+C:\Users\arian\Desktop\Restaurante\backend\backend\obj\Debug\net8.0\backend.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\arian\Desktop\Restaurante\backend\backend\obj\Debug\net8.0\backend.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\arian\Desktop\Restaurante\backend\backend\obj\Debug\net8.0\backend.sourcelink.json
+C:\Users\arian\Desktop\Restaurante\backend\backend\obj\Debug\net8.0\backend.dll
+C:\Users\arian\Desktop\Restaurante\backend\backend\obj\Debug\net8.0\refint\backend.dll
+C:\Users\arian\Desktop\Restaurante\backend\backend\obj\Debug\net8.0\backend.pdb
