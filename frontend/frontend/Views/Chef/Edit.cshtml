@@ -1,0 +1,69 @@
+@model backend.Models.Chef
+
+<main id="main" class="main">
+<div class="pagetitle">
+    <h1>Editar Chef</h1>
+    <nav>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item">Tables</li>
+            <li class="breadcrumb-item active">General</li>
+        </ol>
+    </nav>
+</div><!-- End Page Title -->
+
+<section class="section" class="main">
+    <div class="row">
+        <div class="col-lg-12">
+
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Edita el Chef</h5>
+                    
+                    <!-- Floating Labels Form -->
+                    <form class="row g-3" asp-action="Edit" method="post">
+                        <input type="hidden" asp-for="Id_Chef" />
+                        <div class="col-md-12">
+                            <div class="form-floating">
+                                <input asp-for="Nombre" type="text" class="form-control" id="floatingName" placeholder="Nombre">
+                                <label asp-for="Nombre"></label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <input asp-for="Correo" type="email" class="form-control" id="floatingEmail" placeholder="Correo">
+                                <label asp-for="Correo" for="floatingEmail"></label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <input asp-for="Contrasena" type="password" class="form-control" id="floatingPassword" placeholder="Contraseña">
+                                <label asp-for="Contrasena" for="floatingPassword"></label>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <div class="col-sm-10">
+                                <div class="form-check">
+                                    <br />
+                                    <input asp-for="Activo" class="form-check-input" type="checkbox" id="gridCheck1">
+                                    <label asp-for="Activo" class="form-check-label" for="gridCheck1"></label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary">Guardar Cambios</button>
+                                <a asp-action="Index">Back to List</a>
+                        </div>
+                            
+                    </form><!-- End floating Labels Form -->
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+</main><!-- End #main -->

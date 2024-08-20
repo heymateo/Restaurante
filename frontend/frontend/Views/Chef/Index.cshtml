@@ -1,0 +1,61 @@
+@model List<backend.Models.Chef>
+
+<main id="main" class="main">
+
+    <div class="pagetitle">
+        <h1>Lista de Chef</h1>
+        <nav>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item">Tables</li>
+                <li class="breadcrumb-item active">General</li>
+            </ol>
+        </nav>
+    </div><!-- End Page Title -->
+
+    <section class="section" class="main">
+        <div class="row">
+            <div class="col-lg-12">
+
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Chef</h5>
+
+
+                        <!-- Table with stripped rows -->
+                        <table class="table datatable">
+                            <thead>
+                                <tr>
+                                    <th scope="col">ID</th>
+                                    <th scope="col">Nombre</th>
+                                    <th scope="col">Correo</th>
+                                    <th scope="col">Activo</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var chef in Model)
+                                {
+                                    <tr>
+                                        <td>@chef.Id_Chef</td>
+                                        <td>@chef.Nombre</td>
+                                        <td>@chef.Correo</td>
+                                        <td>@chef.Activo</td>
+                                        <td>
+                                            <a href="@Url.Action("Edit", new { id = chef.Id_Chef })">Editar</a> |
+                                            <a href="@Url.Action("Deactivate", new { id = chef.Id_Chef })">Desactivar</a>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                        <!-- End Table with stripped rows -->
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+</main><!-- End #main -->

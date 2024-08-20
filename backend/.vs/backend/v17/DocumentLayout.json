@@ -1,13 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\mateo\\Desktop\\Restaurante\\backend\\",
+  "WorkspaceRootPath": "C:\\Users\\arian\\Desktop\\Restaurante\\backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D0FF8025-8F08-4D22-86E5-2B7D7237EB06}|..\\Models\\Models.csproj|c:\\users\\mateo\\desktop\\restaurante\\models\\backenddbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4BB4B1E4-2FFA-4ADB-A433-373309BA419D}|..\\frontend\\frontend\\frontend.csproj|c:\\users\\arian\\desktop\\restaurante\\backend\\..\\frontend\\frontend\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BB4B1E4-2FFA-4ADB-A433-373309BA419D}|..\\frontend\\frontend\\frontend.csproj|solutionrelative:..\\frontend\\frontend\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A4CCAC7F-84D6-4831-BDE6-FD103CEB7534}|backend\\backend.csproj|c:\\users\\mateo\\desktop\\restaurante\\backend\\backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A4CCAC7F-84D6-4831-BDE6-FD103CEB7534}|backend\\backend.csproj|solutionrelative:backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4BB4B1E4-2FFA-4ADB-A433-373309BA419D}|..\\frontend\\frontend\\frontend.csproj|c:\\users\\arian\\desktop\\restaurante\\backend\\..\\frontend\\frontend\\controllers\\chefcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BB4B1E4-2FFA-4ADB-A433-373309BA419D}|..\\frontend\\frontend\\frontend.csproj|solutionrelative:..\\frontend\\frontend\\controllers\\chefcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -21,39 +22,51 @@
           "Children": [
             {
               "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
             }
           ]
         },
         {
           "DockedWidth": 374,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\mateo\\Desktop\\Restaurante\\backend\\backend\\Program.cs",
-              "RelativeDocumentMoniker": "backend\\Program.cs",
-              "ToolTip": "C:\\Users\\mateo\\Desktop\\Restaurante\\backend\\backend\\Program.cs",
-              "RelativeToolTip": "backend\\Program.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 0,
+              "Title": "ClienteController.cs",
+              "DocumentMoniker": "C:\\Users\\arian\\Desktop\\Restaurante\\frontend\\frontend\\Controllers\\ClienteController.cs",
+              "RelativeDocumentMoniker": "..\\frontend\\frontend\\Controllers\\ClienteController.cs",
+              "ToolTip": "C:\\Users\\arian\\Desktop\\Restaurante\\frontend\\frontend\\Controllers\\ClienteController.cs",
+              "RelativeToolTip": "..\\frontend\\frontend\\Controllers\\ClienteController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-16T15:38:03.272Z",
+              "WhenOpened": "2024-08-20T00:42:51.827Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "BackendDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\mateo\\Desktop\\Restaurante\\Models\\BackendDbContext.cs",
-              "RelativeDocumentMoniker": "..\\Models\\BackendDbContext.cs",
-              "ToolTip": "C:\\Users\\mateo\\Desktop\\Restaurante\\Models\\BackendDbContext.cs",
-              "RelativeToolTip": "..\\Models\\BackendDbContext.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAIwBUAAAANAAAA",
+              "DocumentIndex": 1,
+              "Title": "ChefController.cs",
+              "DocumentMoniker": "C:\\Users\\arian\\Desktop\\Restaurante\\frontend\\frontend\\Controllers\\ChefController.cs",
+              "RelativeDocumentMoniker": "..\\frontend\\frontend\\Controllers\\ChefController.cs",
+              "ToolTip": "C:\\Users\\arian\\Desktop\\Restaurante\\frontend\\frontend\\Controllers\\ChefController.cs",
+              "RelativeToolTip": "..\\frontend\\frontend\\Controllers\\ChefController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-16T15:32:51.401Z",
+              "WhenOpened": "2024-08-20T00:42:41.848Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             }
           ]
         }

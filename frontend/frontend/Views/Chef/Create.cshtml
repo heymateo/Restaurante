@@ -1,0 +1,58 @@
+@model backend.Models.Chef
+
+
+
+<main class="main" id="main">
+    <section class="section">
+        <div class="row">
+            <div class="col-lg-12">
+
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Crea un nuevo chef</h5>
+
+                        <div class="row mb-3">
+                            <div class="col-md-10">
+                                <form asp-action="Create">
+                                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                                    <div class="row mb-3">
+                                        <label asp-for ="Nombre"  class="col-sm-2 col-form-label"></label>
+                                        <div class="col-sm-10">
+                                            <input asp-for="Nombre" class="form-control" />
+                                            <span asp-validation-for="Nombre" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <label asp-for="Correo"  class="col-sm-2 col-form-label"></label>
+                                        <div class="col-sm-10">
+                                        <input asp-for="Correo" class="form-control" />
+                                        <span asp-validation-for="Correo" class="text-danger"></span>
+                                    </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                            <label asp-for="Contrasena" class="col-sm-2 col-form-label"></label>
+                                            <div class="col-sm-10">
+                                        <input asp-for="Contrasena" class="form-control" />
+                                        <span asp-validation-for="Contrasena" class="text-danger"></span>
+                                    </div>
+                                    </div>
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" asp-for="Activo" /> @Html.DisplayNameFor(model => model.Activo)
+                                        </label>
+                                    </div>
+                                    <div class="text-center">
+                                        <input type="submit" value="Create" class="btn btn-primary" />
+                                        <a class="btn btn-secondary" asp-action="Index" asp-controller="Chef">Back to List</a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+                        </section>
+                        </main>
+

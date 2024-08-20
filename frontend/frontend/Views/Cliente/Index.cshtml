@@ -1,0 +1,54 @@
+@model List<backend.Models.Cliente>
+
+<main id="main" class="main">
+
+    <div class="pagetitle">
+        <h1>Lista de Cliente</h1>
+        <nav>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item">Tables</li>
+                <li class="breadcrumb-item active">General</li>
+            </ol>
+        </nav>
+    </div><!-- End Page Title -->
+
+    <section class="section" class="main">
+        <div class="row">
+            <div class="col-lg-12">
+
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Clientes</h5>
+  
+                        <table class="table datatable">
+                            <thead>
+                                <tr>
+                                    
+                                    <th scope="col">Nombre</th>
+                                    <th scope="col">Apellido</th>
+                                  
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var chef in Model)
+                                {
+                                    <tr>
+                                        
+                                        <td>@chef.Nombre</td>
+                                        <td>@chef.Apellido</td>
+                                       
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                        <!-- End Table with stripped rows -->
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+</main><!-- End #main -->
