@@ -1,4 +1,4 @@
-﻿@model backend.Models.Platillo
+﻿@model frontend.Models.PlatilloViewModel
  
 <main id="main" class="main">
 
@@ -44,12 +44,15 @@
                             </div>
 
                             <div class="col-md-6">
-                                <div class="form-floating">
-                                    <input asp-for="Categoria.Nombre" type="text" class="form-control" id="floatingCategoria" placeholder="Categoria.Nombre">
-                                    <label asp-for="Categoria.Nombre"></label>
-                                    <span asp-validation-for="Categoria.Nombre" class="text-danger"></span>
-                                </div>
+                                <select class="form-select" id="floatingSelect" name="categoria">
+                                    <option value="" selected>Selecciona una categoría</option>
+                                    @foreach (var categoria in Model.Categorias)
+                                    {
+                                        <option value="@categoria.Id_Categoria">@categoria.Nombre</option>
+                                    }
+                                </select>
                             </div>
+
 
                             <div class="text-center">
                                 <button type="submit" class="btn btn-primary">Editar</button>

@@ -31,7 +31,7 @@
                                 <tr>
                                     <th scope="row">@platillo.Nombre</th>
                                     <td>@platillo.Descripcion</td>
-                                    <td>@platillo.Precio</td>
+                                    <td>₡@platillo.Precio</td>
                                     <td>@platillo.Categoria?.Nombre</td>
                                     <td class="text-center">
                                         <a type="button" class="btn btn-primary" href="@Url.Action("Edit", "Platillo", new { id = platillo.Id_Platillo })">Editar</a>
@@ -71,7 +71,7 @@
                                 <tr>
                                     <th scope="row">@bebida.Nombre</th>
                                     <td>@bebida.Descripcion</td>
-                                    <td>@bebida.Precio</td>
+                                    <td>₡@bebida.Precio</td>
                                     <td>@bebida.Categoria?.Nombre</td>
                                     <td class="text-center">
                                         <a type="button" class="btn btn-primary" href="@Url.Action("Edit", "Bebida", new { id = bebida.Id_Bebida })">Editar</a>

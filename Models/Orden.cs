@@ -47,8 +47,12 @@ namespace backend.Models
 
         public Cliente Cliente { get; set; }
 
-        [BindNever]
+
+
+        [ForeignKey("Mesa")]
         public int Id_Mesa { get; set; }
+
+
         [BindNever]
         [JsonIgnore]
         public Mesa Mesa { get; set; }

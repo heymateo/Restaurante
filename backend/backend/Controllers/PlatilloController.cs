@@ -14,15 +14,19 @@ namespace backend.Controllers
         {
             _context = context;
         }
+
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Platillo>>> GetPlatillos()
         {
-            var platillos = await _context.Platillo
-                                  .Include(x => x.ListaCategorias)
-                                  .ToListAsync();
+            //var platillos = await _context.Platillo
+            //                      .Include(x => x.Categoria)
+            //                      .ToListAsync();
 
-            return Ok(platillos);
+            //return Ok(platillos);
+
+            return await _context.Platillo.ToListAsync();
         }
+
         [HttpGet("{id}")]
         public async Task<ActionResult<Platillo>> GetPlatillo(int id)
         {
