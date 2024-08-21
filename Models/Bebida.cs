@@ -8,29 +8,27 @@ namespace backend.Models
     public class Bebida
     {
         public int Id_Bebida { get; set; }
+
         [Required(ErrorMessage = "Es requerido")]
         [StringLength(50, ErrorMessage = "Máximo 50 caracteres")]
         public string Nombre { get; set; }
+
         [Required(ErrorMessage = "Es requerido")]
         [StringLength(200, ErrorMessage = "Máximo 200 caracteres")]
         public string Descripcion { get; set; }
+
         [Required(ErrorMessage = "Es requerido")]
-        [Column(TypeName = "decimal(7, 2)")]
-        public decimal Precio { get; set; }
+        public int Precio { get; set; }
+
         public int? Id_Categoria { get; set; }
+
         [BindNever]
         [JsonIgnore]
         public Categoria? Categoria { get; set; }
+
         [BindNever]
         [JsonIgnore]
         public ICollection<DetalleOrden>? DetalleOrdenes { get; set; }
-        [BindNever]
-        [NotMapped]
-        [JsonIgnore]
-        public List<Categoria> ListaCategorias { get; set; }
-        public Bebida()
-        {
-            ListaCategorias = new List<Categoria>();
-        }
+
     }
 }

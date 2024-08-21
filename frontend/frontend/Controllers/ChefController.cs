@@ -8,8 +8,6 @@ namespace frontend.Controllers
 {
     public class ChefController : Controller
     {
-        private readonly FrontendDbContext _context;
-
         private readonly IHttpClientFactory _httpClientFactory;
         public ChefController(IHttpClientFactory httpClientFactory)
         {
@@ -31,19 +29,19 @@ namespace frontend.Controllers
 
             if (response.IsSuccessStatusCode)
             {
-                var chefs = await response.Content.ReadFromJsonAsync<List<ChefModel>>();
+                var chefs = await response.Content.ReadFromJsonAsync<List<Chef>>();
                 return View(chefs);
             }
             else
             {
                 // Manejar el error
-                return View(new List<ChefModel>());
+                return View(new List<Chef>());
             }
         }
         // Método para manejar la creación de nuevo chef
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create(ChefModel model)
+        public async Task<IActionResult> Create(Chef model)
         {
             if (ModelState.IsValid)
             {
@@ -70,7 +68,7 @@ namespace frontend.Controllers
 
             if (response.IsSuccessStatusCode)
             {
-                var Chef = await response.Content.ReadFromJsonAsync<ChefModel>();
+                var Chef = await response.Content.ReadFromJsonAsync<Chef>();
                 return View(Chef);
             }
             else
@@ -83,7 +81,7 @@ namespace frontend.Controllers
         // Método para manejar la edición de un Chef
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, ChefModel model)
+        public async Task<IActionResult> Edit(int id, [Bind("Id_Chef,Nombre,Correo,Contrasena,Activo")] Chef model)
         {
             if (ModelState.IsValid)
             {
@@ -115,7 +113,7 @@ namespace frontend.Controllers
 
             if (response.IsSuccessStatusCode)
             {
-                var Chef = await response.Content.ReadFromJsonAsync<ChefModel>();
+                var Chef = await response.Content.ReadFromJsonAsync<Chef>();
                 if (Chef != null)
                 {
                     Chef.Activo = false;

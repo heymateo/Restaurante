@@ -30,13 +30,13 @@ namespace frontend.Controllers
 
             if (response.IsSuccessStatusCode)
             {
-                var clientes = await response.Content.ReadFromJsonAsync<List<ClienteModel>>();
+                var clientes = await response.Content.ReadFromJsonAsync<List<Cliente>>();
                 return View(clientes);
             }
             else
             {
                 // Manejar el error
-                return View(new List<ClienteModel>());
+                return View(new List<Cliente>());
             }
         }
     }

@@ -24,16 +24,31 @@ namespace frontend.Controllers
             var client = _httpClientFactory.CreateClient();
             var bebidaResponse = await client.GetAsync("https://localhost:7061/api/Bebida");
             var platilloResponse = await client.GetAsync("https://localhost:7061/api/Platillo");
-           
-            if (bebidaResponse.IsSuccessStatusCode && platilloResponse.IsSuccessStatusCode)
+            var categoriaResponse = await client.GetAsync("https://localhost:7061/api/Categoria");
+
+            if (bebidaResponse.IsSuccessStatusCode && platilloResponse.IsSuccessStatusCode && categoriaResponse.IsSuccessStatusCode)
             {
                 var bebidas = await bebidaResponse.Content.ReadFromJsonAsync<List<Bebida>>();
                 var platillos = await platilloResponse.Content.ReadFromJsonAsync<List<Platillo>>();
-                
+                var categorias = await categoriaResponse.Content.ReadFromJsonAsync<List<Categoria>>();
+
+                // Mapear categorías a platillos
+                foreach (var platillo in platillos)
+                {
+                    platillo.Categoria = categorias.FirstOrDefault(c => c.Id_Categoria == platillo.Id_Categoria);
+                }
+
+                // Mapear categorías a bebidas
+                foreach (var bebida in bebidas)
+                {
+                    bebida.Categoria = categorias.FirstOrDefault(c => c.Id_Categoria == bebida.Id_Categoria);
+                }
+
                 var viewModel = new MenuViewModel
                 {
                     Bebidas = bebidas,
-                    Platillos = platillos
+                    Platillos = platillos,
+                    Categorias = categorias
                 };
 
                 return View(viewModel);
@@ -44,6 +59,7 @@ namespace frontend.Controllers
                 return View(new MenuViewModel());
             }
         }
+
 
     }
 }

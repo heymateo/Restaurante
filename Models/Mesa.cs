@@ -16,13 +16,13 @@ namespace backend.Models
         public string Numero_Mesa { get; set; }
         [Required(ErrorMessage = "Es requerido")]
         public bool Disponible { get; set; }
-        [ForeignKey("Cliente")]
-        public int? Id_Cliente { get; set; }
+
         [Required(ErrorMessage = "Es requerido")]
         [DisplayName("Activar")]
         public bool Activa { get; set; }
         [BindNever]
         [JsonIgnore]
+        [NotMapped]
         public Orden? Orden { get; set; } // Para navegación en el context
     }
 }

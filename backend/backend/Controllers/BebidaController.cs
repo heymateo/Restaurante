@@ -14,15 +14,13 @@ namespace backend.Controllers
         {
             _context = context;
         }
+
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Bebida>>> GetBebidas()
         {
-            var bebidas = await _context.Platillo
-                                  .Include(x => x.ListaCategorias)
-                                  .ToListAsync();
-
-            return Ok(bebidas);
+            return await _context.Bebida.ToListAsync();
         }
+
         [HttpGet("{id}")]
         public async Task<ActionResult<Bebida>> GetBebida(int id)
         {

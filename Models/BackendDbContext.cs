@@ -27,6 +27,7 @@ namespace backend.Models
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+
             // Configurar tabla Cuenta
             modelBuilder.Entity<Cuenta>(entity =>
             {
@@ -61,7 +62,7 @@ namespace backend.Models
 
                 entity.HasOne(o => o.Mesa)
                 .WithOne(m => m.Orden)
-                .HasForeignKey<Mesa>(d => d.Id_Mesa);
+                .HasForeignKey<Orden>(d => d.Id_Mesa);
             });
 
             // Configurar tabla DetalleOrden
@@ -208,6 +209,7 @@ namespace backend.Models
                 new Bebida { Id_Bebida = 10, Nombre = "Daiquiri de Fresa Frozen", Descripcion = "Cóctel frozen con ron blanco, fresas frescas, jugo de limón y azúcar.", Precio = 6800, Id_Categoria = 4 });
             
             modelBuilder.Entity<Mesa>().HasData(
+                new Mesa { Id_Mesa = 1, Numero_Mesa = "1", Disponible = true, Activa = true },
                 new Mesa { Id_Mesa = 2, Numero_Mesa = "2", Disponible = true, Activa = true },
                 new Mesa { Id_Mesa = 3, Numero_Mesa = "5", Disponible = true, Activa = true },
                 new Mesa { Id_Mesa = 4, Numero_Mesa = "1", Disponible = true, Activa = true },

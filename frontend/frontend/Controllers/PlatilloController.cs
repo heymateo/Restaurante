@@ -20,24 +20,6 @@ namespace frontend.Controllers
             _httpClientFactory = httpClientFactory;
         }
 
-        // GET: Platillo
-        public async Task<IActionResult> Index()
-        {
-            var client = _httpClientFactory.CreateClient();
-            var response = await client.GetAsync("https://localhost:7061/api/Platillo");
-
-            if (response.IsSuccessStatusCode)
-            {
-                var platillo = await response.Content.ReadFromJsonAsync<List<Platillo>>();
-                return View(platillo);
-            }
-            else
-            {
-                // Manejar el error
-                return View(new List<Platillo>());
-            }
-        }
-
         // GET: Platillo/Create
         public async Task<IActionResult> Create()
         {
@@ -88,6 +70,11 @@ namespace frontend.Controllers
         // GET: Platillo/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
             var client = _httpClientFactory.CreateClient();
             var platilloResponse = await client.GetAsync($"https://localhost:7061/api/Platillo/{id}");
             var categoriaResponse = await client.GetAsync("https://localhost:7061/api/Categoria");
@@ -97,9 +84,13 @@ namespace frontend.Controllers
                 var platillo = await platilloResponse.Content.ReadFromJsonAsync<Platillo>();
                 var categorias = await categoriaResponse.Content.ReadFromJsonAsync<List<Categoria>>();
 
-                platillo.ListaCategorias = categorias;
+                var viewModel = new PlatilloViewModel
+                {
+                    Platillo = platillo,
+                    Categorias = categorias
+                };
 
-                return View(platillo);
+                return View(viewModel);
             }
             else
             {
@@ -112,39 +103,40 @@ namespace frontend.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
-[ValidateAntiForgeryToken]
-public async Task<IActionResult> Edit(int id, Platillo model)
-{
-    if (ModelState.IsValid)
-    {
-        var client = _httpClientFactory.CreateClient();
-
-        // Actualizar la categoría del platillo
-        var categoriaResponse = await client.GetAsync($"https://localhost:7061/api/Categoria/{model.Id_Categoria}");
-        if (categoriaResponse.IsSuccessStatusCode)
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Edit(int id, PlatilloViewModel model)
         {
-            var categoria = await categoriaResponse.Content.ReadFromJsonAsync<List<Categoria>>();
-            model.ListaCategorias = categoria;
+
+            if (ModelState.IsValid)
+            {
+                var client = _httpClientFactory.CreateClient();
+
+                // Actualizar la categoría del platillo
+                var categoriaResponse = await client.GetAsync($"https://localhost:7061/api/Categoria/{model.Id_Categoria}");
+                if (categoriaResponse.IsSuccessStatusCode)
+                {
+                    var categoria = await categoriaResponse.Content.ReadFromJsonAsync<List<Categoria>>();
+                    model.Categorias = categoria;
                     
-            // Actualizar el platillo con la categoría
-            var response = await client.PutAsJsonAsync($"https://localhost:7061/api/Platillo/{id}", model);
+                    // Actualizar el platillo con la categoría
+                    var response = await client.PutAsJsonAsync($"https://localhost:7061/api/Platillo/{id}", model);
 
-            if (response.IsSuccessStatusCode)
-            {
-                return RedirectToAction("Index", "MenuView");
+                    if (response.IsSuccessStatusCode)
+                    {
+                        return RedirectToAction("Index", "MenuView");
+                    }
+                    else
+                    {
+                        ModelState.AddModelError(string.Empty, "Error al actualizar el platillo.");
+                    }
+                }
+                else
+                {
+                    ModelState.AddModelError(string.Empty, "Error al obtener la categoría.");
+                }       
             }
-            else
-            {
-                ModelState.AddModelError(string.Empty, "Error al actualizar el platillo.");
-            }
+            return View(model);
         }
-        else
-        {
-            ModelState.AddModelError(string.Empty, "Error al obtener la categoría.");
-        }
-    }
-    return View(model);
-}
 
 
     }
