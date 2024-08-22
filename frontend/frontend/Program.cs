@@ -11,6 +11,16 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<BackendDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("BackendDbContext")));
 
+// Configurar la sesión
+builder.Services.AddDistributedMemoryCache();
+builder.Services.AddSession(options =>
+{
+    options.IdleTimeout = TimeSpan.FromMinutes(30); // Tiempo de expiración de la sesión
+    options.Cookie.HttpOnly = true;
+    options.Cookie.IsEssential = true;
+});
+
+
 
 // Añadir autenticación de servicios
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
@@ -38,6 +48,9 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
+
+// Habilitar la sesión
+app.UseSession();
 
 app.UseAuthentication();
 app.UseAuthorization();
