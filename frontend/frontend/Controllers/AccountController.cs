@@ -35,12 +35,14 @@ public class AccountController : Controller
             {
                 // Guardar el nombre del administrador en la sesión
                 HttpContext.Session.SetString("UserName", admin.Nombre);
+                HttpContext.Session.SetString("Email", admin.Correo);
                 return RedirectToAction("Index", "Home");
             }
             else if (empleado != null)
             {
                 // Guardar el nombre del empleado en la sesión
                 HttpContext.Session.SetString("UserName", empleado.Nombre);
+                HttpContext.Session.SetString("Email", empleado.Correo);
                 return RedirectToAction("Index", "Home");
             }
 
@@ -90,12 +92,7 @@ public class AccountController : Controller
         return View(model);
     }
 
-    [HttpGet]
-    public IActionResult Profile()
-    {
-        // Obtener el perfil del usuario autenticado
-        return View();
-    }
+
 
     [HttpGet]
     public IActionResult EditProfile() => View();
