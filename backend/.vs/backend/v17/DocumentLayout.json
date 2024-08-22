@@ -1,21 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\mateo\\Desktop\\Restaurante\\backend\\",
+  "WorkspaceRootPath": "C:\\Users\\Gino\\Desktop\\Universidad\\2024-2\\Progra Avanzada Web\\Restaurante\\backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4BB4B1E4-2FFA-4ADB-A433-373309BA419D}|..\\frontend\\frontend\\frontend.csproj|c:\\users\\mateo\\desktop\\restaurante\\frontend\\frontend\\controllers\\platillocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4BB4B1E4-2FFA-4ADB-A433-373309BA419D}|..\\frontend\\frontend\\frontend.csproj|c:\\users\\gino\\desktop\\universidad\\2024-2\\progra avanzada web\\restaurante\\frontend\\frontend\\views\\mesa\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4BB4B1E4-2FFA-4ADB-A433-373309BA419D}|..\\frontend\\frontend\\frontend.csproj|c:\\users\\mateo\\desktop\\restaurante\\frontend\\frontend\\views\\platillo\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{4BB4B1E4-2FFA-4ADB-A433-373309BA419D}|..\\frontend\\frontend\\frontend.csproj|c:\\users\\gino\\desktop\\universidad\\2024-2\\progra avanzada web\\restaurante\\frontend\\frontend\\views\\administrador\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4BB4B1E4-2FFA-4ADB-A433-373309BA419D}|..\\frontend\\frontend\\frontend.csproj|c:\\users\\mateo\\desktop\\restaurante\\frontend\\frontend\\views\\menuview\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{4BB4B1E4-2FFA-4ADB-A433-373309BA419D}|..\\frontend\\frontend\\frontend.csproj|c:\\users\\gino\\desktop\\universidad\\2024-2\\progra avanzada web\\restaurante\\frontend\\frontend\\views\\mesa\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4BB4B1E4-2FFA-4ADB-A433-373309BA419D}|..\\frontend\\frontend\\frontend.csproj|c:\\users\\mateo\\desktop\\restaurante\\frontend\\frontend\\models\\platilloviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4BB4B1E4-2FFA-4ADB-A433-373309BA419D}|..\\frontend\\frontend\\frontend.csproj|c:\\users\\gino\\desktop\\universidad\\2024-2\\progra avanzada web\\restaurante\\frontend\\frontend\\views\\mesa\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D0FF8025-8F08-4D22-86E5-2B7D7237EB06}|..\\Models\\Models.csproj|c:\\users\\mateo\\desktop\\restaurante\\models\\platillo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4BB4B1E4-2FFA-4ADB-A433-373309BA419D}|..\\frontend\\frontend\\frontend.csproj|c:\\users\\gino\\desktop\\universidad\\2024-2\\progra avanzada web\\restaurante\\frontend\\frontend\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BB4B1E4-2FFA-4ADB-A433-373309BA419D}|..\\frontend\\frontend\\frontend.csproj|c:\\users\\gino\\desktop\\universidad\\2024-2\\progra avanzada web\\restaurante\\frontend\\frontend\\views\\administrador\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BB4B1E4-2FFA-4ADB-A433-373309BA419D}|..\\frontend\\frontend\\frontend.csproj|c:\\users\\gino\\desktop\\universidad\\2024-2\\progra avanzada web\\restaurante\\frontend\\frontend\\views\\mesa\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BB4B1E4-2FFA-4ADB-A433-373309BA419D}|..\\frontend\\frontend\\frontend.csproj|c:\\users\\gino\\desktop\\universidad\\2024-2\\progra avanzada web\\restaurante\\frontend\\frontend\\views\\empleado\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -24,76 +33,129 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 482,
-          "SelectedChildIndex": 4,
+          "DockedWidth": 481,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\mateo\\Desktop\\Restaurante\\frontend\\frontend\\Views\\MenuView\\Index.cshtml",
-              "RelativeDocumentMoniker": "..\\frontend\\frontend\\Views\\MenuView\\Index.cshtml",
-              "ToolTip": "C:\\Users\\mateo\\Desktop\\Restaurante\\frontend\\frontend\\Views\\MenuView\\Index.cshtml",
-              "RelativeToolTip": "..\\frontend\\frontend\\Views\\MenuView\\Index.cshtml",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-21T22:16:40.308Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PlatilloViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\mateo\\Desktop\\Restaurante\\frontend\\frontend\\Models\\PlatilloViewModel.cs",
-              "RelativeDocumentMoniker": "..\\frontend\\frontend\\Models\\PlatilloViewModel.cs",
-              "ToolTip": "C:\\Users\\mateo\\Desktop\\Restaurante\\frontend\\frontend\\Models\\PlatilloViewModel.cs",
-              "RelativeToolTip": "..\\frontend\\frontend\\Models\\PlatilloViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-21T22:04:11.927Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\mateo\\Desktop\\Restaurante\\frontend\\frontend\\Views\\Platillo\\Edit.cshtml",
-              "RelativeDocumentMoniker": "..\\frontend\\frontend\\Views\\Platillo\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\mateo\\Desktop\\Restaurante\\frontend\\frontend\\Views\\Platillo\\Edit.cshtml",
-              "RelativeToolTip": "..\\frontend\\frontend\\Views\\Platillo\\Edit.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAoAAAA",
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Gino\\Desktop\\Universidad\\2024-2\\Progra Avanzada Web\\Restaurante\\frontend\\frontend\\Views\\Administrador\\Create.cshtml",
+              "RelativeDocumentMoniker": "..\\frontend\\frontend\\Views\\Administrador\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Gino\\Desktop\\Universidad\\2024-2\\Progra Avanzada Web\\Restaurante\\frontend\\frontend\\Views\\Administrador\\Create.cshtml",
+              "RelativeToolTip": "..\\frontend\\frontend\\Views\\Administrador\\Create.cshtml",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAADYAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-21T20:07:02.154Z",
+              "WhenOpened": "2024-08-22T05:00:23.472Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PlatilloController.cs",
-              "DocumentMoniker": "C:\\Users\\mateo\\Desktop\\Restaurante\\frontend\\frontend\\Controllers\\PlatilloController.cs",
-              "RelativeDocumentMoniker": "..\\frontend\\frontend\\Controllers\\PlatilloController.cs",
-              "ToolTip": "C:\\Users\\mateo\\Desktop\\Restaurante\\frontend\\frontend\\Controllers\\PlatilloController.cs",
-              "RelativeToolTip": "..\\frontend\\frontend\\Controllers\\PlatilloController.cs",
-              "ViewState": "AQIAAHQAAAAAAAAAAAAiwGwAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-21T21:58:25.417Z",
+              "DocumentIndex": 5,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Gino\\Desktop\\Universidad\\2024-2\\Progra Avanzada Web\\Restaurante\\frontend\\frontend\\Views\\Administrador\\Edit.cshtml",
+              "RelativeDocumentMoniker": "..\\frontend\\frontend\\Views\\Administrador\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Gino\\Desktop\\Universidad\\2024-2\\Progra Avanzada Web\\Restaurante\\frontend\\frontend\\Views\\Administrador\\Edit.cshtml",
+              "RelativeToolTip": "..\\frontend\\frontend\\Views\\Administrador\\Edit.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-22T04:53:58.558Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Gino\\Desktop\\Universidad\\2024-2\\Progra Avanzada Web\\Restaurante\\frontend\\frontend\\Views\\Empleado\\Index.cshtml",
+              "RelativeDocumentMoniker": "..\\frontend\\frontend\\Views\\Empleado\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Gino\\Desktop\\Universidad\\2024-2\\Progra Avanzada Web\\Restaurante\\frontend\\frontend\\Views\\Empleado\\Index.cshtml",
+              "RelativeToolTip": "..\\frontend\\frontend\\Views\\Empleado\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-22T04:42:25.94Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 483,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Gino\\Desktop\\Universidad\\2024-2\\Progra Avanzada Web\\Restaurante\\frontend\\frontend\\Views\\Mesa\\Create.cshtml",
+              "RelativeDocumentMoniker": "..\\frontend\\frontend\\Views\\Mesa\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Gino\\Desktop\\Universidad\\2024-2\\Progra Avanzada Web\\Restaurante\\frontend\\frontend\\Views\\Mesa\\Create.cshtml",
+              "RelativeToolTip": "..\\frontend\\frontend\\Views\\Mesa\\Create.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-22T05:00:30.191Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Platillo.cs",
-              "DocumentMoniker": "C:\\Users\\mateo\\Desktop\\Restaurante\\Models\\Platillo.cs",
-              "RelativeDocumentMoniker": "..\\Models\\Platillo.cs",
-              "ToolTip": "C:\\Users\\mateo\\Desktop\\Restaurante\\Models\\Platillo.cs",
-              "RelativeToolTip": "..\\Models\\Platillo.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABcAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-21T22:09:01.24Z",
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Gino\\Desktop\\Universidad\\2024-2\\Progra Avanzada Web\\Restaurante\\frontend\\frontend\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "..\\frontend\\frontend\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Gino\\Desktop\\Universidad\\2024-2\\Progra Avanzada Web\\Restaurante\\frontend\\frontend\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "..\\frontend\\frontend\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAANIAAAAAAAAAAAAAAPgAAABFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-22T04:59:28.51Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\Gino\\Desktop\\Universidad\\2024-2\\Progra Avanzada Web\\Restaurante\\frontend\\frontend\\Views\\Mesa\\Delete.cshtml",
+              "RelativeDocumentMoniker": "..\\frontend\\frontend\\Views\\Mesa\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\Gino\\Desktop\\Universidad\\2024-2\\Progra Avanzada Web\\Restaurante\\frontend\\frontend\\Views\\Mesa\\Delete.cshtml",
+              "RelativeToolTip": "..\\frontend\\frontend\\Views\\Mesa\\Delete.cshtml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAC4AAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-22T04:56:39.494Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Gino\\Desktop\\Universidad\\2024-2\\Progra Avanzada Web\\Restaurante\\frontend\\frontend\\Views\\Mesa\\Edit.cshtml",
+              "RelativeDocumentMoniker": "..\\frontend\\frontend\\Views\\Mesa\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Gino\\Desktop\\Universidad\\2024-2\\Progra Avanzada Web\\Restaurante\\frontend\\frontend\\Views\\Mesa\\Edit.cshtml",
+              "RelativeToolTip": "..\\frontend\\frontend\\Views\\Mesa\\Edit.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-22T04:47:44.076Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Gino\\Desktop\\Universidad\\2024-2\\Progra Avanzada Web\\Restaurante\\frontend\\frontend\\Views\\Mesa\\Index.cshtml",
+              "RelativeDocumentMoniker": "..\\frontend\\frontend\\Views\\Mesa\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Gino\\Desktop\\Universidad\\2024-2\\Progra Avanzada Web\\Restaurante\\frontend\\frontend\\Views\\Mesa\\Index.cshtml",
+              "RelativeToolTip": "..\\frontend\\frontend\\Views\\Mesa\\Index.cshtml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAgAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-22T04:39:38.581Z",
               "EditorCaption": ""
             }
           ]
