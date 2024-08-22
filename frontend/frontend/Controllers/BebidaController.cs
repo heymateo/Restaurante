@@ -47,11 +47,11 @@ namespace frontend.Controllers
 
             if (response.IsSuccessStatusCode)
             {
-                model.ListaCategorias = await response.Content.ReadFromJsonAsync<List<Categoria>>();
+                //model.ListaCategorias = await response.Content.ReadFromJsonAsync<List<Categoria>>();
             }
             else
             {
-                model.ListaCategorias = new List<Categoria>(); // Manejo del caso en que no se obtengan categorías
+                //model.ListaCategorias = new List<Categoria>(); // Manejo del caso en que no se obtengan categorías
             }
 
             return View(model);
@@ -93,7 +93,7 @@ namespace frontend.Controllers
                 var bebida = await bebidaResponse.Content.ReadFromJsonAsync<Bebida>();
                 var categorias = await categoriaResponse.Content.ReadFromJsonAsync<List<Categoria>>();
 
-                bebida.ListaCategorias = categorias;
+                //bebida.ListaCategorias = categorias;
 
                 return View(bebida);
             }

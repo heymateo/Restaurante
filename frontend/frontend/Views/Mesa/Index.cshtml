@@ -1,0 +1,65 @@
+﻿@model IEnumerable<backend.Models.Mesa>
+
+<main id="main" class="main">
+
+    <div class="col-lg-12">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Lista de Mesas</h5>
+                <p>
+                    Bienvenido a la sección de mesas. Aquí encontrará una lista completa de las mesas del restaurante.
+                    Desde esta página, puede editar la información de cada mesa, incluyendo su número, disponibilidad y estado.
+                </p>
+
+                <!-- Table with stripped rows -->
+                <table class="table table-hover datatable">
+                    <thead>
+                        <tr>
+                            <th>
+                                @Html.DisplayNameFor(model => model.Numero_Mesa)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.Disponible)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.Activa)
+                            </th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Numero_Mesa)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Disponible)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Activa)
+                                </td>
+                                <td class="btn-group" role="group">
+                                    <a type="button" class="btn btn-primary" href="@Url.Action("Edit", new { id = item.Id_Mesa })">Editar</a>
+                                    <a type="button" class="btn btn-danger" href="@Url.Action("Delete", new { id = item.Id_Mesa })">Eliminar</a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+                <!-- End Table with stripped rows -->
+
+            </div>
+        </div>
+    </div>
+
+
+
+</main><!-- End #main -->
+
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+

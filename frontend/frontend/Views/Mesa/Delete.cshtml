@@ -1,0 +1,53 @@
+﻿@model backend.Models.Mesa
+
+<main id="main" class="main">
+
+    <div class="col-lg-12">
+
+        <div class="card">
+            <div class="card-body">
+
+                <!-- Floating Labels Form -->
+                <h3>¿Seguro que deseas eliminar esta mesa?</h3>
+                <div>
+                    <h4>Mesa</h4>
+                    <hr />
+                    <dl class="row">
+                        <dt class="col-sm-2">
+                            @Html.DisplayNameFor(model => model.Numero_Mesa)
+                        </dt>
+                        <dd class="col-sm-10">
+                            @Html.DisplayFor(model => model.Numero_Mesa)
+                        </dd>
+                        <dt class="col-sm-2">
+                            @Html.DisplayNameFor(model => model.Disponible)
+                        </dt>
+                        <dd class="col-sm-10">
+                            @Html.DisplayFor(model => model.Disponible)
+                        </dd>
+                        <dt class="col-sm-2">
+                            @Html.DisplayNameFor(model => model.Activa)
+                        </dt>
+                        <dd class="col-sm-10">
+                            @Html.DisplayFor(model => model.Activa)
+                        </dd>
+                    </dl>
+
+                    <form asp-action="Delete">
+                        <input type="hidden" asp-for="Id_Mesa" />
+                        <div class="btn-group" role="group">
+                            <input type="submit" value="Eliminar" class="btn btn-danger" /> 
+                            <a asp-action="Index" class="btn btn-secondary">Regresar</a>
+                        </div>
+                    </form>
+                </div>
+                <!-- End floating Labels Form -->
+
+            </div>
+        </div>
+
+    </div>
+
+</main><!-- End #main -->
+
+

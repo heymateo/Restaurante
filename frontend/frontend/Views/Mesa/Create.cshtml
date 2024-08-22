@@ -1,0 +1,51 @@
+﻿@model backend.Models.Mesa
+
+<main id="main" class="main">
+
+    <div class="col-lg-12">
+
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Crear Mesa</h5>
+                <p>
+                    Bienvenido a la sección de creación de mesas. Asegúrate de completar todos los campos requeridos para garantizar
+                    que las nuevas mesas se agreguen correctamente
+                </p>
+
+                <!-- Floating Labels Form -->
+                <form asp-action="Create">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="form-group">
+                        <label asp-for="Numero_Mesa" class="control-label"></label>
+                        <input asp-for="Numero_Mesa" class="form-control" />
+                        <span asp-validation-for="Numero_Mesa" class="text-danger"></span>
+                    </div>
+                    <br />
+                    <div class="form-group form-check">
+                        <label class="form-check-label">
+                            <input class="form-check-input" asp-for="Disponible" /> @Html.DisplayNameFor(model => model.Disponible)
+                        </label>
+                    </div>
+                    <br />
+                    <div class="form-group form-check">
+                        <label class="form-check-label">
+                            <input class="form-check-input" asp-for="Activa" /> @Html.DisplayNameFor(model => model.Activa)
+                        </label>
+                    </div>
+                    <br />
+                    <div class="btn-group" role="group">
+                        <button type="submit" class="btn btn-primary">Crear</button>
+                        <a asp-action="Index" asp-controller="Mesa" class="btn btn-secondary">Regresar</a>
+                        <button type="reset" class="btn btn-danger">Resetear</button>
+                    </div>
+                </form><!-- End floating Labels Form -->
+
+            </div>
+        </div>
+
+    </div>
+
+</main><!-- End #main -->
+
+
+
