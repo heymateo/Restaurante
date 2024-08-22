@@ -54,37 +54,37 @@
 <body>
     <div class="register-container">
         <div class="register-header">
-            <h2>@ViewData["Title"]</h2>
+            <h2>Registro</h2>
         </div>
 
         <form asp-action="Register" method="post">
             <div class="form-group">
                 <label asp-for="Nombre" class="form-label"></label>
-                <input asp-for="Nombre" class="form-control" placeholder="Full Name" />
+                <input asp-for="Nombre" class="form-control" placeholder="Nombre completo" />
                 <span asp-validation-for="Nombre" class="text-danger"></span>
             </div>
 
             <div class="form-group">
                 <label asp-for="Correo" class="form-label"></label>
-                <input asp-for="Correo" class="form-control" placeholder="Email address" />
+                <input asp-for="Correo" class="form-control" placeholder="Eescribe tu dirección de correo aquí" />
                 <span asp-validation-for="Correo" class="text-danger"></span>
             </div>
 
             <div class="form-group">
-                <label asp-for="Contrasena" class="form-label"></label>
-                <input asp-for="Contrasena" type="password" class="form-control" placeholder="Password" />
+                <label asp-for="Contrasena" class="form-label">Contraseña</label>
+                <input asp-for="Contrasena" type="password" class="form-control" placeholder="Escribe una contraseña aquí" />
                 <span asp-validation-for="Contrasena" class="text-danger"></span>
             </div>
 
             <input type="hidden" asp-for="TipoUsuario" value="Empleado" />
-
+            <hr /><br />
             <div class="form-group">
-                <input type="submit" value="Register" class="btn btn-primary" />
+                <input type="submit" value="Registrarse" class="btn btn-primary" />
             </div>
         </form>
 
         <div class="footer-links">
-            <a asp-action="Login">Already have an account? Login here</a>
+            <a asp-action="Login">Ya tienes una cuenta? Inicia sesión</a>
         </div>
     </div>
 

@@ -3,71 +3,30 @@
   "WorkspaceRootPath": "C:\\Users\\Gino\\Desktop\\Universidad\\2024-2\\Progra Avanzada Web\\Restaurante\\backend\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{4BB4B1E4-2FFA-4ADB-A433-373309BA419D}|..\\frontend\\frontend\\frontend.csproj|c:\\users\\gino\\desktop\\universidad\\2024-2\\progra avanzada web\\restaurante\\frontend\\frontend\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BB4B1E4-2FFA-4ADB-A433-373309BA419D}|..\\frontend\\frontend\\frontend.csproj|c:\\users\\gino\\desktop\\universidad\\2024-2\\progra avanzada web\\restaurante\\frontend\\frontend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4BB4B1E4-2FFA-4ADB-A433-373309BA419D}|..\\frontend\\frontend\\frontend.csproj|c:\\users\\gino\\desktop\\universidad\\2024-2\\progra avanzada web\\restaurante\\frontend\\frontend\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4BB4B1E4-2FFA-4ADB-A433-373309BA419D}|..\\frontend\\frontend\\frontend.csproj|c:\\users\\gino\\desktop\\universidad\\2024-2\\progra avanzada web\\restaurante\\frontend\\frontend\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4BB4B1E4-2FFA-4ADB-A433-373309BA419D}|..\\frontend\\frontend\\frontend.csproj|c:\\users\\gino\\desktop\\universidad\\2024-2\\progra avanzada web\\restaurante\\frontend\\frontend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D0FF8025-8F08-4D22-86E5-2B7D7237EB06}|..\\Models\\Models.csproj|c:\\users\\gino\\desktop\\universidad\\2024-2\\progra avanzada web\\restaurante\\models\\profileviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BB4B1E4-2FFA-4ADB-A433-373309BA419D}|..\\frontend\\frontend\\frontend.csproj|c:\\users\\gino\\desktop\\universidad\\2024-2\\progra avanzada web\\restaurante\\frontend\\frontend\\views\\account\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D0FF8025-8F08-4D22-86E5-2B7D7237EB06}|..\\Models\\Models.csproj|c:\\users\\gino\\desktop\\universidad\\2024-2\\progra avanzada web\\restaurante\\models\\editprofileviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4BB4B1E4-2FFA-4ADB-A433-373309BA419D}|..\\frontend\\frontend\\frontend.csproj|c:\\users\\gino\\desktop\\universidad\\2024-2\\progra avanzada web\\restaurante\\frontend\\frontend\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D0FF8025-8F08-4D22-86E5-2B7D7237EB06}|..\\Models\\Models.csproj|c:\\users\\gino\\desktop\\universidad\\2024-2\\progra avanzada web\\restaurante\\models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BB4B1E4-2FFA-4ADB-A433-373309BA419D}|..\\frontend\\frontend\\frontend.csproj|c:\\users\\gino\\desktop\\universidad\\2024-2\\progra avanzada web\\restaurante\\frontend\\frontend\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BB4B1E4-2FFA-4ADB-A433-373309BA419D}|..\\frontend\\frontend\\frontend.csproj|c:\\users\\gino\\desktop\\universidad\\2024-2\\progra avanzada web\\restaurante\\frontend\\frontend\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BB4B1E4-2FFA-4ADB-A433-373309BA419D}|..\\frontend\\frontend\\frontend.csproj|c:\\users\\gino\\desktop\\universidad\\2024-2\\progra avanzada web\\restaurante\\frontend\\frontend\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D0FF8025-8F08-4D22-86E5-2B7D7237EB06}|..\\Models\\Models.csproj|c:\\users\\gino\\desktop\\universidad\\2024-2\\progra avanzada web\\restaurante\\models\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4BB4B1E4-2FFA-4ADB-A433-373309BA419D}|..\\frontend\\frontend\\frontend.csproj|c:\\users\\gino\\desktop\\universidad\\2024-2\\progra avanzada web\\restaurante\\frontend\\frontend\\controllers\\administradorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BB4B1E4-2FFA-4ADB-A433-373309BA419D}|..\\frontend\\frontend\\frontend.csproj|c:\\users\\gino\\desktop\\universidad\\2024-2\\progra avanzada web\\restaurante\\frontend\\frontend\\views\\account\\editprofile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A4CCAC7F-84D6-4831-BDE6-FD103CEB7534}|backend\\backend.csproj|c:\\users\\gino\\desktop\\universidad\\2024-2\\progra avanzada web\\restaurante\\backend\\backend\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A4CCAC7F-84D6-4831-BDE6-FD103CEB7534}|backend\\backend.csproj|solutionrelative:backend\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A4CCAC7F-84D6-4831-BDE6-FD103CEB7534}|backend\\backend.csproj|c:\\users\\gino\\desktop\\universidad\\2024-2\\progra avanzada web\\restaurante\\backend\\backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A4CCAC7F-84D6-4831-BDE6-FD103CEB7534}|backend\\backend.csproj|solutionrelative:backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A4CCAC7F-84D6-4831-BDE6-FD103CEB7534}|backend\\backend.csproj|c:\\users\\gino\\desktop\\universidad\\2024-2\\progra avanzada web\\restaurante\\backend\\backend\\services\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A4CCAC7F-84D6-4831-BDE6-FD103CEB7534}|backend\\backend.csproj|solutionrelative:backend\\services\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A4CCAC7F-84D6-4831-BDE6-FD103CEB7534}|backend\\backend.csproj|c:\\users\\gino\\desktop\\universidad\\2024-2\\progra avanzada web\\restaurante\\backend\\backend\\services\\interfaces\\iauthenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A4CCAC7F-84D6-4831-BDE6-FD103CEB7534}|backend\\backend.csproj|solutionrelative:backend\\services\\interfaces\\iauthenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D0FF8025-8F08-4D22-86E5-2B7D7237EB06}|..\\Models\\Models.csproj|c:\\users\\gino\\desktop\\universidad\\2024-2\\progra avanzada web\\restaurante\\models\\backenddbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D0FF8025-8F08-4D22-86E5-2B7D7237EB06}|..\\Models\\Models.csproj|c:\\users\\gino\\desktop\\universidad\\2024-2\\progra avanzada web\\restaurante\\models\\empleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D0FF8025-8F08-4D22-86E5-2B7D7237EB06}|..\\Models\\Models.csproj|c:\\users\\gino\\desktop\\universidad\\2024-2\\progra avanzada web\\restaurante\\models\\administrador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A4CCAC7F-84D6-4831-BDE6-FD103CEB7534}|backend\\backend.csproj|c:\\users\\gino\\desktop\\universidad\\2024-2\\progra avanzada web\\restaurante\\backend\\backend\\controllers\\administradorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4CCAC7F-84D6-4831-BDE6-FD103CEB7534}|backend\\backend.csproj|solutionrelative:backend\\controllers\\administradorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -76,8 +35,8 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 481,
-          "SelectedChildIndex": 13,
+          "DockedWidth": 295,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -93,275 +52,112 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\Gino\\Desktop\\Universidad\\2024-2\\Progra Avanzada Web\\Restaurante\\backend\\backend\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "backend\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\Gino\\Desktop\\Universidad\\2024-2\\Progra Avanzada Web\\Restaurante\\backend\\backend\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "backend\\Controllers\\AuthController.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAAowAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-22T21:22:38.65Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AdministradorController.cs",
+              "DocumentMoniker": "C:\\Users\\Gino\\Desktop\\Universidad\\2024-2\\Progra Avanzada Web\\Restaurante\\frontend\\frontend\\Controllers\\AdministradorController.cs",
+              "RelativeDocumentMoniker": "..\\frontend\\frontend\\Controllers\\AdministradorController.cs",
+              "ToolTip": "C:\\Users\\Gino\\Desktop\\Universidad\\2024-2\\Progra Avanzada Web\\Restaurante\\frontend\\frontend\\Controllers\\AdministradorController.cs",
+              "RelativeToolTip": "..\\frontend\\frontend\\Controllers\\AdministradorController.cs",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAIwEEAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-22T21:22:07.019Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 668,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\Gino\\Desktop\\Universidad\\2024-2\\Progra Avanzada Web\\Restaurante\\frontend\\frontend\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "..\\frontend\\frontend\\Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\Gino\\Desktop\\Universidad\\2024-2\\Progra Avanzada Web\\Restaurante\\frontend\\frontend\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "..\\frontend\\frontend\\Views\\Account\\Login.cshtml",
+              "ViewState": "AQIAADMAAAAAAAAAAAAAAEsAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-22T21:57:33.968Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Gino\\Desktop\\Universidad\\2024-2\\Progra Avanzada Web\\Restaurante\\frontend\\frontend\\Program.cs",
+              "RelativeDocumentMoniker": "..\\frontend\\frontend\\Program.cs",
+              "ToolTip": "C:\\Users\\Gino\\Desktop\\Universidad\\2024-2\\Progra Avanzada Web\\Restaurante\\frontend\\frontend\\Program.cs",
+              "RelativeToolTip": "..\\frontend\\frontend\\Program.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAACYAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-22T21:56:29.192Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Gino\\Desktop\\Universidad\\2024-2\\Progra Avanzada Web\\Restaurante\\frontend\\frontend\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "..\\frontend\\frontend\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Gino\\Desktop\\Universidad\\2024-2\\Progra Avanzada Web\\Restaurante\\frontend\\frontend\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "..\\frontend\\frontend\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-22T21:51:03.925Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Gino\\Desktop\\Universidad\\2024-2\\Progra Avanzada Web\\Restaurante\\frontend\\frontend\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "..\\frontend\\frontend\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Gino\\Desktop\\Universidad\\2024-2\\Progra Avanzada Web\\Restaurante\\frontend\\frontend\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "..\\frontend\\frontend\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAEYAAAAAAAAAAAAAAFgAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-22T21:49:50.903Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "AccountController.cs",
               "DocumentMoniker": "C:\\Users\\Gino\\Desktop\\Universidad\\2024-2\\Progra Avanzada Web\\Restaurante\\frontend\\frontend\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "..\\frontend\\frontend\\Controllers\\AccountController.cs",
               "ToolTip": "C:\\Users\\Gino\\Desktop\\Universidad\\2024-2\\Progra Avanzada Web\\Restaurante\\frontend\\frontend\\Controllers\\AccountController.cs",
               "RelativeToolTip": "..\\frontend\\frontend\\Controllers\\AccountController.cs",
-              "ViewState": "AQIAABQAAAAAAAAAAAAQwCQAAABIAAAA",
+              "ViewState": "AQIAABEAAAAAAAAAAAAUwBYAAABAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-22T19:13:57.054Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Gino\\Desktop\\Universidad\\2024-2\\Progra Avanzada Web\\Restaurante\\frontend\\frontend\\Program.cs",
-              "RelativeDocumentMoniker": "..\\frontend\\frontend\\Program.cs",
-              "ToolTip": "C:\\Users\\Gino\\Desktop\\Universidad\\2024-2\\Progra Avanzada Web\\Restaurante\\frontend\\frontend\\Program.cs",
-              "RelativeToolTip": "..\\frontend\\frontend\\Program.cs",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAAADMAAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-22T18:10:56.215Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Gino\\Desktop\\Universidad\\2024-2\\Progra Avanzada Web\\Restaurante\\frontend\\frontend\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "..\\frontend\\frontend\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Gino\\Desktop\\Universidad\\2024-2\\Progra Avanzada Web\\Restaurante\\frontend\\frontend\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "..\\frontend\\frontend\\Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-22T20:10:41.145Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ProfileViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Gino\\Desktop\\Universidad\\2024-2\\Progra Avanzada Web\\Restaurante\\Models\\ProfileViewModel.cs",
-              "RelativeDocumentMoniker": "..\\Models\\ProfileViewModel.cs",
-              "ToolTip": "C:\\Users\\Gino\\Desktop\\Universidad\\2024-2\\Progra Avanzada Web\\Restaurante\\Models\\ProfileViewModel.cs",
-              "RelativeToolTip": "..\\Models\\ProfileViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-22T19:09:36.739Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "RegisterViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Gino\\Desktop\\Universidad\\2024-2\\Progra Avanzada Web\\Restaurante\\Models\\RegisterViewModel.cs",
-              "RelativeDocumentMoniker": "..\\Models\\RegisterViewModel.cs",
-              "ToolTip": "C:\\Users\\Gino\\Desktop\\Universidad\\2024-2\\Progra Avanzada Web\\Restaurante\\Models\\RegisterViewModel.cs",
-              "RelativeToolTip": "..\\Models\\RegisterViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-22T19:09:12.305Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Register.cshtml",
-              "DocumentMoniker": "C:\\Users\\Gino\\Desktop\\Universidad\\2024-2\\Progra Avanzada Web\\Restaurante\\frontend\\frontend\\Views\\Account\\Register.cshtml",
-              "RelativeDocumentMoniker": "..\\frontend\\frontend\\Views\\Account\\Register.cshtml",
-              "ToolTip": "C:\\Users\\Gino\\Desktop\\Universidad\\2024-2\\Progra Avanzada Web\\Restaurante\\frontend\\frontend\\Views\\Account\\Register.cshtml",
-              "RelativeToolTip": "..\\frontend\\frontend\\Views\\Account\\Register.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFoAAABMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-22T19:12:22.128Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\Users\\Gino\\Desktop\\Universidad\\2024-2\\Progra Avanzada Web\\Restaurante\\frontend\\frontend\\Views\\Account\\Login.cshtml",
-              "RelativeDocumentMoniker": "..\\frontend\\frontend\\Views\\Account\\Login.cshtml",
-              "ToolTip": "C:\\Users\\Gino\\Desktop\\Universidad\\2024-2\\Progra Avanzada Web\\Restaurante\\frontend\\frontend\\Views\\Account\\Login.cshtml",
-              "RelativeToolTip": "..\\frontend\\frontend\\Views\\Account\\Login.cshtml",
-              "ViewState": "AQIAAD4AAAAAAAAAAAAAAFIAAABMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-22T19:07:30.892Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Profile.cshtml",
-              "DocumentMoniker": "C:\\Users\\Gino\\Desktop\\Universidad\\2024-2\\Progra Avanzada Web\\Restaurante\\frontend\\frontend\\Views\\Account\\Profile.cshtml",
-              "RelativeDocumentMoniker": "..\\frontend\\frontend\\Views\\Account\\Profile.cshtml",
-              "ToolTip": "C:\\Users\\Gino\\Desktop\\Universidad\\2024-2\\Progra Avanzada Web\\Restaurante\\frontend\\frontend\\Views\\Account\\Profile.cshtml",
-              "RelativeToolTip": "..\\frontend\\frontend\\Views\\Account\\Profile.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-22T19:12:46.584Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\Gino\\Desktop\\Universidad\\2024-2\\Progra Avanzada Web\\Restaurante\\frontend\\frontend\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "..\\frontend\\frontend\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\Gino\\Desktop\\Universidad\\2024-2\\Progra Avanzada Web\\Restaurante\\frontend\\frontend\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "..\\frontend\\frontend\\Controllers\\HomeController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-22T19:44:27.631Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "EditProfileViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Gino\\Desktop\\Universidad\\2024-2\\Progra Avanzada Web\\Restaurante\\Models\\EditProfileViewModel.cs",
-              "RelativeDocumentMoniker": "..\\Models\\EditProfileViewModel.cs",
-              "ToolTip": "C:\\Users\\Gino\\Desktop\\Universidad\\2024-2\\Progra Avanzada Web\\Restaurante\\Models\\EditProfileViewModel.cs",
-              "RelativeToolTip": "..\\Models\\EditProfileViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-22T19:14:44.376Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\Gino\\Desktop\\Universidad\\2024-2\\Progra Avanzada Web\\Restaurante\\frontend\\frontend\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "..\\frontend\\frontend\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\Gino\\Desktop\\Universidad\\2024-2\\Progra Avanzada Web\\Restaurante\\frontend\\frontend\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "..\\frontend\\frontend\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAADYAAAAAAAAAAAAAAE4AAABCAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-22T19:58:59.568Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "LoginViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Gino\\Desktop\\Universidad\\2024-2\\Progra Avanzada Web\\Restaurante\\Models\\LoginViewModel.cs",
-              "RelativeDocumentMoniker": "..\\Models\\LoginViewModel.cs",
-              "ToolTip": "C:\\Users\\Gino\\Desktop\\Universidad\\2024-2\\Progra Avanzada Web\\Restaurante\\Models\\LoginViewModel.cs",
-              "RelativeToolTip": "..\\Models\\LoginViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-22T19:08:44.947Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "EditProfile.cshtml",
-              "DocumentMoniker": "C:\\Users\\Gino\\Desktop\\Universidad\\2024-2\\Progra Avanzada Web\\Restaurante\\frontend\\frontend\\Views\\Account\\EditProfile.cshtml",
-              "RelativeDocumentMoniker": "..\\frontend\\frontend\\Views\\Account\\EditProfile.cshtml",
-              "ToolTip": "C:\\Users\\Gino\\Desktop\\Universidad\\2024-2\\Progra Avanzada Web\\Restaurante\\frontend\\frontend\\Views\\Account\\EditProfile.cshtml",
-              "RelativeToolTip": "..\\frontend\\frontend\\Views\\Account\\EditProfile.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-22T19:13:09.267Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
               "Title": "AdministradorController.cs",
-              "DocumentMoniker": "C:\\Users\\Gino\\Desktop\\Universidad\\2024-2\\Progra Avanzada Web\\Restaurante\\frontend\\frontend\\Controllers\\AdministradorController.cs",
-              "RelativeDocumentMoniker": "..\\frontend\\frontend\\Controllers\\AdministradorController.cs",
-              "ToolTip": "C:\\Users\\Gino\\Desktop\\Universidad\\2024-2\\Progra Avanzada Web\\Restaurante\\frontend\\frontend\\Controllers\\AdministradorController.cs",
-              "RelativeToolTip": "..\\frontend\\frontend\\Controllers\\AdministradorController.cs",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAowCMAAAAHAAAA",
+              "DocumentMoniker": "C:\\Users\\Gino\\Desktop\\Universidad\\2024-2\\Progra Avanzada Web\\Restaurante\\backend\\backend\\Controllers\\AdministradorController.cs",
+              "RelativeDocumentMoniker": "backend\\Controllers\\AdministradorController.cs",
+              "ToolTip": "C:\\Users\\Gino\\Desktop\\Universidad\\2024-2\\Progra Avanzada Web\\Restaurante\\backend\\backend\\Controllers\\AdministradorController.cs",
+              "RelativeToolTip": "backend\\Controllers\\AdministradorController.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-22T19:13:33.776Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\Gino\\Desktop\\Universidad\\2024-2\\Progra Avanzada Web\\Restaurante\\backend\\backend\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "backend\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\Gino\\Desktop\\Universidad\\2024-2\\Progra Avanzada Web\\Restaurante\\backend\\backend\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "backend\\Controllers\\AuthController.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAQwEoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-22T18:56:38.136Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Gino\\Desktop\\Universidad\\2024-2\\Progra Avanzada Web\\Restaurante\\backend\\backend\\Program.cs",
-              "RelativeDocumentMoniker": "backend\\Program.cs",
-              "ToolTip": "C:\\Users\\Gino\\Desktop\\Universidad\\2024-2\\Progra Avanzada Web\\Restaurante\\backend\\backend\\Program.cs",
-              "RelativeToolTip": "backend\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-22T18:10:21.607Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "BackendDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\Gino\\Desktop\\Universidad\\2024-2\\Progra Avanzada Web\\Restaurante\\Models\\BackendDbContext.cs",
-              "RelativeDocumentMoniker": "..\\Models\\BackendDbContext.cs",
-              "ToolTip": "C:\\Users\\Gino\\Desktop\\Universidad\\2024-2\\Progra Avanzada Web\\Restaurante\\Models\\BackendDbContext.cs",
-              "RelativeToolTip": "..\\Models\\BackendDbContext.cs",
-              "ViewState": "AQIAAN8AAAAAAAAAAAAYwP8AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-22T17:53:43.735Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "AuthenticationService.cs",
-              "DocumentMoniker": "C:\\Users\\Gino\\Desktop\\Universidad\\2024-2\\Progra Avanzada Web\\Restaurante\\backend\\backend\\Services\\AuthenticationService.cs",
-              "RelativeDocumentMoniker": "backend\\Services\\AuthenticationService.cs",
-              "ToolTip": "C:\\Users\\Gino\\Desktop\\Universidad\\2024-2\\Progra Avanzada Web\\Restaurante\\backend\\backend\\Services\\AuthenticationService.cs",
-              "RelativeToolTip": "backend\\Services\\AuthenticationService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-22T17:52:14.09Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Empleado.cs",
-              "DocumentMoniker": "C:\\Users\\Gino\\Desktop\\Universidad\\2024-2\\Progra Avanzada Web\\Restaurante\\Models\\Empleado.cs",
-              "RelativeDocumentMoniker": "..\\Models\\Empleado.cs",
-              "ToolTip": "C:\\Users\\Gino\\Desktop\\Universidad\\2024-2\\Progra Avanzada Web\\Restaurante\\Models\\Empleado.cs",
-              "RelativeToolTip": "..\\Models\\Empleado.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-22T17:50:38.549Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "IAuthenticationService.cs",
-              "DocumentMoniker": "C:\\Users\\Gino\\Desktop\\Universidad\\2024-2\\Progra Avanzada Web\\Restaurante\\backend\\backend\\Services\\Interfaces\\IAuthenticationService.cs",
-              "RelativeDocumentMoniker": "backend\\Services\\Interfaces\\IAuthenticationService.cs",
-              "ToolTip": "C:\\Users\\Gino\\Desktop\\Universidad\\2024-2\\Progra Avanzada Web\\Restaurante\\backend\\backend\\Services\\Interfaces\\IAuthenticationService.cs",
-              "RelativeToolTip": "backend\\Services\\Interfaces\\IAuthenticationService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-22T17:50:16.814Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "Administrador.cs",
-              "DocumentMoniker": "C:\\Users\\Gino\\Desktop\\Universidad\\2024-2\\Progra Avanzada Web\\Restaurante\\Models\\Administrador.cs",
-              "RelativeDocumentMoniker": "..\\Models\\Administrador.cs",
-              "ToolTip": "C:\\Users\\Gino\\Desktop\\Universidad\\2024-2\\Progra Avanzada Web\\Restaurante\\Models\\Administrador.cs",
-              "RelativeToolTip": "..\\Models\\Administrador.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-22T17:50:43.335Z",
+              "WhenOpened": "2024-08-22T21:23:08.603Z",
               "EditorCaption": ""
             }
           ]
