@@ -1,5 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using backend.Models;
+using backend.Services;
+using backend.Services.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -20,6 +22,8 @@ builder.Services.AddDbContext<BackendDbContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("BackendDbContext"), b => b.MigrationsAssembly("backend"));
 });
+
+builder.Services.AddScoped<IAuthenticationService, AuthenticationService>();
 
 var app = builder.Build();
 
