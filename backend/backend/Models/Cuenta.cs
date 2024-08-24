@@ -6,8 +6,12 @@ namespace backend.Models
 {
     public class Cuenta
     {
+        [Display(Name = "Cuenta")]
+
         public int Id_Cuenta { get; set; }
         [ForeignKey("Cliente")]
+        [Display(Name = "Cliente")]
+
         public int Id_Cliente { get; set; }
         [ForeignKey("Orden")]
         public int Id_Orden { get; set; }

@@ -2,58 +2,47 @@
 
 <main id="main" class="main">
 
-    <div class="pagetitle">
-        <h1>Lista de Cuentas</h1>
-        <nav>
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                <li class="breadcrumb-item">Tables</li>
-                <li class="breadcrumb-item active">General</li>
-            </ol>
-        </nav>
-    </div><!-- End Page Title -->
+
 
     <section class="section">
-
-        <table class="table">
-            <thead>
-                <tr>
-                    <th>
-                        @Html.DisplayNameFor(model => model.First().Id_Cliente)
-                    </th>
-                    <th>
-                        @Html.DisplayNameFor(model => model.First().Id_Orden)
-                    </th>
-                    <th>
-                        @Html.DisplayNameFor(model => model.First().Total)
-                    </th>
-                    <th>
-                        @Html.DisplayNameFor(model => model.First().Cancelado)
-                    </th>
-                    <th></th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach (var item in Model)
-                {
-                    <tr>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.Id_Cliente)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.Id_Orden)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.Total)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.Cancelado)
-                        </td>
-                    </tr>
-                }
-            </tbody>
-        </table>
-
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Detalles de Cuentas</h5>
+                <p class="card-text">
+                    Bienvenido a la sección de cuentas. Aquí encontrará una lista completa de todas las cuentas registradas en el sistema. Desde esta página, puede ver los detalles de cada cuenta, incluyendo el cliente asociado, el número de orden, el total de la cuenta y su estado de cancelación.
+                </p>
+                <table class="table table-striped table-bordered">
+                    <thead class="table-light">
+                        <tr>
+                            <th>@Html.DisplayNameFor(model => model.First().Id_Cliente)</th>
+                            <th>@Html.DisplayNameFor(model => model.First().Id_Orden)</th>
+                            <th>@Html.DisplayNameFor(model => model.First().Total)</th>
+                            <th>@Html.DisplayNameFor(model => model.First().Cancelado)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@Html.DisplayFor(modelItem => item.Id_Cliente)</td>
+                                <td>@Html.DisplayFor(modelItem => item.Id_Orden)</td>
+                                <td>@Html.DisplayFor(modelItem => item.Total)</td>
+                                <td>
+                                    @if (item.Cancelado)
+                                    {
+                                        <span class="badge bg-danger">Sí</span>
+                                    }
+                                    else
+                                    {
+                                        <span class="badge bg-primary">No</span>
+                                    }
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </section><!-- End .section -->
 
 </main><!-- End #main -->
