@@ -36,6 +36,7 @@ public class AccountController : Controller
                 // Guardar el nombre del administrador en la sesión
                 HttpContext.Session.SetString("UserName", admin.Nombre);
                 HttpContext.Session.SetString("Email", admin.Correo);
+                HttpContext.Session.SetString("UserRole", "Admin");
                 return RedirectToAction("Index", "Home");
             }
             else if (empleado != null)
@@ -43,6 +44,7 @@ public class AccountController : Controller
                 // Guardar el nombre del empleado en la sesión
                 HttpContext.Session.SetString("UserName", empleado.Nombre);
                 HttpContext.Session.SetString("Email", empleado.Correo);
+                HttpContext.Session.SetString("UserRole", "Empleado");
                 return RedirectToAction("Index", "Home");
             }
 

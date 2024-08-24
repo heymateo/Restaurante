@@ -47,7 +47,7 @@
 
         <div class="d-flex align-items-center justify-content-between">
             <i class="bi bi-list toggle-sidebar-btn"  style="margin-right: 20px;"></i>
-            <a href="index.html" class="logo d-flex align-items-center">
+            <a href="" @Url.Action("Index", "Home")"" class="logo d-flex align-items-center">
                 <img src="~/img/logo.png" alt="">
                 <span class="d-none d-lg-block">Restaurante</span>
             </a>
@@ -105,140 +105,149 @@
     <aside id="sidebar" class="sidebar">
 
         <ul class="sidebar-nav" id="sidebar-nav">
+            @if (Context.Session.GetString("UserRole") == "Admin")
+            {
+                <li class="nav-item">
+                    <a class="nav-link collapsed" data-bs-target="#admin-nav" data-bs-toggle="collapse" href="#">
+                        <i class="bi bi-person"></i><span>Administrador</span><i class="bi bi-chevron-down ms-auto"></i>
+                    </a>
+                    <ul id="admin-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                        <li>
+                            <a href="@Url.Action("Index", "Administrador")">
+                                <i class="bi bi-circle"></i><span>Ver</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="@Url.Action("Create", "Administrador")">
+                                <i class="bi bi-circle"></i><span>Agregar</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
 
-            <li class="nav-item">
-                <a class="nav-link collapsed" data-bs-target="#admin-nav" data-bs-toggle="collapse" href="#">
-                    <i class="bi bi-person"></i><span>Administrador</span><i class="bi bi-chevron-down ms-auto"></i>
-                </a>
-                <ul id="admin-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-                    <li>
-                        <a href="@Url.Action("Index", "Administrador")">
-                            <i class="bi bi-circle"></i><span>Ver</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="@Url.Action("Create", "Administrador")">
-                            <i class="bi bi-circle"></i><span>Agregar</span>
-                        </a>
-                    </li>
-                </ul>
-            </li><!-- End Components Nav -->
-
-
-            <li class="nav-item">
-                <a class="nav-link collapsed" data-bs-target="#empleado-nav" data-bs-toggle="collapse" href="#">
-                    <i class="bi bi-person"></i><span>Empleado</span><i class="bi bi-chevron-down ms-auto"></i>
-                </a>
-                <ul id="empleado-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-                    <li>
-                        <a href="@Url.Action("Index", "Empleado")">
-                            <i class="bi bi-circle"></i><span>Ver</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="@Url.Action("Create", "Empleado")">
-                            <i class="bi bi-circle"></i><span>Agregar</span>
-                        </a>
-                    </li>
-                </ul>
-            </li><!-- End Components Nav -->
-
-
-            <li class="nav-item">
-                <a class="nav-link collapsed" data-bs-target="#chef-nav" data-bs-toggle="collapse" href="#">
-                    <i class="bi bi-person"></i><span>Chef</span><i class="bi bi-chevron-down ms-auto"></i>
-                </a>
-                <ul id="chef-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-                    <li>
-                        <a href="@Url.Action("Index", "Chef")">
-                            <i class="bi bi-circle"></i><span>Ver</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="@Url.Action("Create", "Chef")">
-                            <i class="bi bi-circle"></i><span>Agregar</span>
-                        </a>
-                    </li>
-                </ul>
-            </li><!-- End Components Nav -->
+                <!-- End Components Nav -->
+                <li class="nav-item">
+                    <a class="nav-link collapsed" data-bs-target="#empleado-nav" data-bs-toggle="collapse" href="#">
+                        <i class="bi bi-person"></i><span>Empleado</span><i class="bi bi-chevron-down ms-auto"></i>
+                    </a>
+                    <ul id="empleado-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                        <li>
+                            <a href="@Url.Action("Index", "Empleado")">
+                                <i class="bi bi-circle"></i><span>Ver</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="@Url.Action("Create", "Empleado")">
+                                <i class="bi bi-circle"></i><span>Agregar</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
 
 
-            <li class="nav-item">
-                <a class="nav-link collapsed" data-bs-target="#clientes-nav" data-bs-toggle="collapse" href="#">
-                    <i class="bi bi-person"></i><span>Clientes</span><i class="bi bi-chevron-down ms-auto"></i>
-                </a>
-                <ul id="clientes-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-                    <li>
-                        <a href="@Url.Action("Index", "Cliente")">
-                            <i class="bi bi-circle"></i><span>Ver</span>
-                        </a>
-                    </li>
-                </ul>
-            </li><!-- End Components Nav -->
+                <!-- End Components Nav -->
 
-            <li class="nav-item">
-                <a class="nav-link collapsed" data-bs-target="#menu-nav" data-bs-toggle="collapse" href="#">
-                    <i class="bi bi-cup-straw"></i><span>Menu</span><i class="bi bi-chevron-down ms-auto"></i>
-                </a>
-                <ul id="menu-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-                    <li>
-                        <a href="@Url.Action("Index", "MenuView")">
-                            <i class="bi bi-circle"></i><span>Ver</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="@Url.Action("Create", "Platillo")">
-                            <i class="bi bi-circle"></i><span>Crear Platillo</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="@Url.Action("Create", "Bebida")">
-                            <i class="bi bi-circle"></i><span>Crear Bebida</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="@Url.Action("Index", "Categoria")">
-                            <i class="bi bi-circle"></i><span>Categorías</span>
-                        </a>
-                    </li>
-                </ul>
-            </li><!-- End Components Nav -->
+                <li class="nav-item">
+                    <a class="nav-link collapsed" data-bs-target="#chef-nav" data-bs-toggle="collapse" href="#">
+                        <i class="bi bi-person"></i><span>Chef</span><i class="bi bi-chevron-down ms-auto"></i>
+                    </a>
+                    <ul id="chef-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                        <li>
+                            <a href="@Url.Action("Index", "Chef")">
+                                <i class="bi bi-circle"></i><span>Ver</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="@Url.Action("Create", "Chef")">
+                                <i class="bi bi-circle"></i><span>Agregar</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
 
-            <li class="nav-item">
-                <a class="nav-link collapsed" data-bs-target="#mesas-nav" data-bs-toggle="collapse" href="#">
-                    <i class="bi bi-shop"></i><span>Mesas</span><i class="bi bi-chevron-down ms-auto"></i>
-                </a>
-                <ul id="mesas-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-                    <li>
-                        <a href="@Url.Action("Index", "Mesa")">
-                            <i class="bi bi-circle"></i><span>Ver</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="@Url.Action("Create", "Mesa")">
-                            <i class="bi bi-circle"></i><span>Agregar</span>
-                        </a>
-                    </li>
-                </ul>
-            </li><!-- End Components Nav -->
+                <!-- End Components Nav -->
+            }
+            
+            @if (Context.Session.GetString("UserRole") == "Admin" || Context.Session.GetString("UserRole") == "Empleado")
+            {
+                <li class="nav-item">
+                    <a class="nav-link collapsed" data-bs-target="#clientes-nav" data-bs-toggle="collapse" href="#">
+                        <i class="bi bi-person"></i><span>Clientes</span><i class="bi bi-chevron-down ms-auto"></i>
+                    </a>
+                    <ul id="clientes-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                        <li>
+                            <a href="@Url.Action("Index", "Cliente")">
+                                <i class="bi bi-circle"></i><span>Ver</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
 
-            <li class="nav-item">
-                <a class="nav-link collapsed" data-bs-target="#cuentas-nav" data-bs-toggle="collapse" href="#">
-                    <i class="bi bi-receipt"></i><span>Cuentas</span><i class="bi bi-chevron-down ms-auto"></i>
-                </a>
-                <ul id="cuentas-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-                    <li>
-                        <a href="@Url.Action("Index", "Cuenta")">
-                            <i class="bi bi-circle"></i><span>Ver</span>
-                        </a>
-                    </li>
+                <!-- End Components Nav -->
+
+                <li class="nav-item">
+                    <a class="nav-link collapsed" data-bs-target="#menu-nav" data-bs-toggle="collapse" href="#">
+                        <i class="bi bi-cup-straw"></i><span>Menu</span><i class="bi bi-chevron-down ms-auto"></i>
+                    </a>
+                    <ul id="menu-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                        <li>
+                            <a href="@Url.Action("Index", "MenuView")">
+                                <i class="bi bi-circle"></i><span>Ver</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="@Url.Action("Create", "Platillo")">
+                                <i class="bi bi-circle"></i><span>Crear Platillo</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="@Url.Action("Create", "Bebida")">
+                                <i class="bi bi-circle"></i><span>Crear Bebida</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="@Url.Action("Index", "Categoria")">
+                                <i class="bi bi-circle"></i><span>Categorías</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- End Components Nav -->
+                <li class="nav-item">
+                    <a class="nav-link collapsed" data-bs-target="#mesas-nav" data-bs-toggle="collapse" href="#">
+                        <i class="bi bi-shop"></i><span>Mesas</span><i class="bi bi-chevron-down ms-auto"></i>
+                    </a>
+                    <ul id="mesas-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                        <li>
+                            <a href="@Url.Action("Index", "Mesa")">
+                                <i class="bi bi-circle"></i><span>Ver</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="@Url.Action("Create", "Mesa")">
+                                <i class="bi bi-circle"></i><span>Agregar</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- End Components Nav -->
+                <li class="nav-item">
+                    <a class="nav-link collapsed" data-bs-target="#cuentas-nav" data-bs-toggle="collapse" href="#">
+                        <i class="bi bi-receipt"></i><span>Cuentas</span><i class="bi bi-chevron-down ms-auto"></i>
+                    </a>
+                    <ul id="cuentas-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                        <li>
+                            <a href="@Url.Action("Index", "Cuenta")">
+                                <i class="bi bi-circle"></i><span>Ver</span>
+                            </a>
+                        </li>
                    
-                </ul>
-                </ul>
-            </li><!-- End Components Nav -->
-
+                    </ul>
+                </li>
+            }
         </ul>
-
     </aside><!-- End Sidebar-->
 
 
