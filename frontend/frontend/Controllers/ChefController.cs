@@ -2,6 +2,8 @@ using backend.Models;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.CodeAnalysis.Scripting;
+using Microsoft.EntityFrameworkCore;
 using System.Security.Claims;
 
 namespace frontend.Controllers
@@ -85,7 +87,20 @@ namespace frontend.Controllers
         {
             if (ModelState.IsValid)
             {
+                
                 var client = _httpClientFactory.CreateClient();
+
+                // Si la contraseña está vacía, mantén la contraseña actual.
+                var existingChefResponse = await client.GetAsync($"https://localhost:7061/api/Chef/{id}");
+                if (existingChefResponse.IsSuccessStatusCode)
+                {
+                    var existingChef = await existingChefResponse.Content.ReadFromJsonAsync<Chef>();
+                    if (existingChef != null && string.IsNullOrEmpty(model.Contrasena))
+                    {
+                        model.Contrasena = existingChef.Contrasena; // Mantén la contraseña actual
+                    }
+                }
+
                 var response = await client.PutAsJsonAsync($"https://localhost:7061/api/Chef/{id}", model);
 
                 if (response.IsSuccessStatusCode)
@@ -99,6 +114,7 @@ namespace frontend.Controllers
             }
             return View(model);
         }
+
 
         public async Task<IActionResult> DeactivateView()
         {

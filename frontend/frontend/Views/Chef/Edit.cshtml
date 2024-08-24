@@ -17,16 +17,22 @@
                             <label asp-for="Nombre"></label>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-12">
                         <div class="form-floating">
                             <input asp-for="Correo" type="email" class="form-control" id="floatingEmail" placeholder="Correo">
                             <label asp-for="Correo" for="floatingEmail"></label>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <hr />
+                    <div class="col-md-12">
+                        <p style="color:    dimgray; font-size: smaller;">
+                            Nota: Editar solo si se requiere una nueva contraseña.
+                            En caso contrario dejar en blanco para mantener la existente
+                        </p>
                         <div class="form-floating">
-                            <input asp-for="Contrasena" type="password" class="form-control" id="floatingPassword" placeholder="Contraseña">
-                            <label asp-for="Contrasena" for="floatingPassword"></label>
+                            
+                            <input asp-for="Contrasena" type="password" class="form-control" id="floatingPassword" placeholder="Nueva Contraseña">
+                            <label asp-for="Contrasena" for="floatingPassword">Nueva Contraseña</label>
                         </div>
                     </div>
 
