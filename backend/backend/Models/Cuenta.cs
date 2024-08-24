@@ -21,6 +21,6 @@ namespace backend.Models
         [Required(ErrorMessage = "Es requerido")]
         public bool Cancelado { get; set; }
         [BindNever]
-        public Orden Orden { get; set; } // Para navegación en el context
+        public Orden Orden { get; set; } 
     }
 }
