@@ -21,9 +21,8 @@ namespace backend.Models
         [DataType(DataType.EmailAddress)]
         public string Correo { get; set; }
 
-        [Required(ErrorMessage = "Es requerido")]
         [DataType(DataType.Password)]
-        public string Contrasena { get; set; }
+        public string? Contrasena { get; set; }
 
         [Required(ErrorMessage = "Es requerido")]
         [DisplayName("Activar")]
