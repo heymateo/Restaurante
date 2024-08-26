@@ -67,77 +67,78 @@ namespace frontend.Controllers
             return View(model);
         }
 
-        // GET: Platillo/Edit/5
-        public async Task<IActionResult> Edit(int? id)
+        [HttpGet]
+        public async Task<IActionResult> Edit(int id)
         {
-            if (id == null)
+            var client = _httpClientFactory.CreateClient();
+
+            // Obtener el platillo para la edición
+            var platilloResponse = await client.GetAsync($"https://localhost:7061/api/Platillo/{id}");
+            if (!platilloResponse.IsSuccessStatusCode)
             {
                 return NotFound();
             }
 
-            var client = _httpClientFactory.CreateClient();
-            var platilloResponse = await client.GetAsync($"https://localhost:7061/api/Platillo/{id}");
+            var platillo = await platilloResponse.Content.ReadFromJsonAsync<Platillo>();
+
+            // Obtener todas las categorías para la vista
             var categoriaResponse = await client.GetAsync("https://localhost:7061/api/Categoria");
-
-            if (platilloResponse.IsSuccessStatusCode && categoriaResponse.IsSuccessStatusCode)
+            if (!categoriaResponse.IsSuccessStatusCode)
             {
-                var platillo = await platilloResponse.Content.ReadFromJsonAsync<Platillo>();
-                var categorias = await categoriaResponse.Content.ReadFromJsonAsync<List<Categoria>>();
-
-                var viewModel = new PlatilloViewModel
-                {
-                    Platillo = platillo,
-                    Categorias = categorias
-                };
-
-                return View(viewModel);
+                return View(platillo); // Puedes manejar el error de la categoría aquí
             }
-            else
+
+            var categorias = await categoriaResponse.Content.ReadFromJsonAsync<List<Categoria>>();
+
+            var model = new PlatilloViewModel
             {
-                // Manejar el error
-                return RedirectToAction(nameof(Index));
-            }
+                Id_Platillo = platillo.Id_Platillo,
+                Nombre = platillo.Nombre,
+                Descripcion = platillo.Descripcion,
+                Precio = platillo.Precio,
+                Id_Categoria = platillo.Id_Categoria,
+                Categorias = categorias // Asignar la lista de categorías a la vista
+            };
+
+            return View(model);
         }
 
-        // POST: Platillo/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, PlatilloViewModel model)
+        public async Task<IActionResult> Edit(int id, [Bind("Id_Platillo,Nombre,Descripcion,Precio,Id_Categoria")] PlatilloViewModel model)
         {
+            ModelState.Remove("Platillo");
+            ModelState.Remove("Categorias");
 
             if (ModelState.IsValid)
             {
                 var client = _httpClientFactory.CreateClient();
 
-                // Actualizar la categoría del platillo
-                var categoriaResponse = await client.GetAsync($"https://localhost:7061/api/Categoria/{model.Id_Categoria}");
-                if (categoriaResponse.IsSuccessStatusCode)
+                // Actualizar el platillo con la categoría seleccionada
+                var updatedPlatillo = new Platillo
                 {
-                    var categoria = await categoriaResponse.Content.ReadFromJsonAsync<List<Categoria>>();
-                    model.Categorias = categoria;
-                    
-                    // Actualizar el platillo con la categoría
-                    var response = await client.PutAsJsonAsync($"https://localhost:7061/api/Platillo/{id}", model);
+                    Id_Platillo = model.Id_Platillo,
+                    Nombre = model.Nombre,
+                    Descripcion = model.Descripcion,
+                    Precio = model.Precio,
+                    Id_Categoria = model.Id_Categoria // La categoría seleccionada
+                };
 
-                    if (response.IsSuccessStatusCode)
-                    {
-                        return RedirectToAction("Index", "MenuView");
-                    }
-                    else
-                    {
-                        ModelState.AddModelError(string.Empty, "Error al actualizar el platillo.");
-                    }
+                var response = await client.PutAsJsonAsync($"https://localhost:7061/api/Platillo/{id}", updatedPlatillo);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    return RedirectToAction("Index", "MenuView");
                 }
                 else
                 {
-                    ModelState.AddModelError(string.Empty, "Error al obtener la categoría.");
-                }       
+                    ModelState.AddModelError(string.Empty, "Error al actualizar el platillo.");
+                }
             }
+
+
             return View(model);
         }
-
 
     }
 }

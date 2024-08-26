@@ -233,11 +233,11 @@ namespace backend.Models
                 new Orden { Id_Orden = 10, Fecha = DateTime.Now, Hora = DateTime.Now.TimeOfDay, Numero_Orden = 10, Cantidad_Personas = 4, Cancelado = false, Id_Empleado = 5, Id_Cliente = 10, Id_Mesa = 10, Id_Chef = 5});
 
             modelBuilder.Entity<DetalleOrden>().HasData(
-                new DetalleOrden { Id_Detalle_Orden = 1, Id_Orden = 1, Id_Platillo = 1, Cantidad_Platillo = 2, Id_Bebida = 1, Cantidad_Bebida = 1, Precio = 100.00m },
-                new DetalleOrden { Id_Detalle_Orden = 2, Id_Orden = 2, Id_Platillo = 3, Cantidad_Platillo = 1, Id_Bebida = 2, Cantidad_Bebida = 2, Precio = 150.00m },
-                new DetalleOrden { Id_Detalle_Orden = 3, Id_Orden = 3, Id_Platillo = 2, Cantidad_Platillo = 3, Id_Bebida = 3, Cantidad_Bebida = 3, Precio = 200.00m },
-                new DetalleOrden { Id_Detalle_Orden = 4, Id_Orden = 4, Id_Platillo = 4, Cantidad_Platillo = 1, Id_Bebida = 4, Cantidad_Bebida = 2, Precio = 175.00m },
-                new DetalleOrden { Id_Detalle_Orden = 5, Id_Orden = 5, Id_Platillo = 5, Cantidad_Platillo = 2, Id_Bebida = 5, Cantidad_Bebida = 1, Precio = 125.00m });
+                new DetalleOrden { Id_Detalle_Orden = 1, Id_Orden = 1, Id_Platillo = 1, Cantidad_Platillo = 2, Id_Bebida = 1, Cantidad_Bebida = 1, Precio = 100 },
+                new DetalleOrden { Id_Detalle_Orden = 2, Id_Orden = 2, Id_Platillo = 3, Cantidad_Platillo = 1, Id_Bebida = 2, Cantidad_Bebida = 2, Precio = 150 },
+                new DetalleOrden { Id_Detalle_Orden = 3, Id_Orden = 3, Id_Platillo = 2, Cantidad_Platillo = 3, Id_Bebida = 3, Cantidad_Bebida = 3, Precio = 200 },
+                new DetalleOrden { Id_Detalle_Orden = 4, Id_Orden = 4, Id_Platillo = 4, Cantidad_Platillo = 1, Id_Bebida = 4, Cantidad_Bebida = 2, Precio = 175 },
+                new DetalleOrden { Id_Detalle_Orden = 5, Id_Orden = 5, Id_Platillo = 5, Cantidad_Platillo = 2, Id_Bebida = 5, Cantidad_Bebida = 1, Precio = 125 });
 
             modelBuilder.Entity<Cuenta>().HasData(
                 new Cuenta { Id_Cuenta = 1, Id_Cliente = 1, Id_Orden = 1, Total = 1500, Cancelado = false },

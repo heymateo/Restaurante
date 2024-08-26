@@ -24,6 +24,7 @@ namespace backend.Models
         public int? Id_Categoria { get; set; }
 
         [BindNever]
+        [JsonIgnore]
         public Categoria? Categoria { get; set; } // Para navegación en el context
 
         [BindNever]

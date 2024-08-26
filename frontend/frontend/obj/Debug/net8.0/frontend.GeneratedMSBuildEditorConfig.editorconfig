@@ -17,155 +17,175 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = frontend
 build_property.RootNamespace = frontend
-build_property.ProjectDir = C:\Users\Gino\Desktop\Universidad\2024-2\Progra Avanzada Web\Restaurante\frontend\frontend\
+build_property.ProjectDir = C:\Users\mateo\Desktop\Restaurante\frontend\frontend\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Gino\Desktop\Universidad\2024-2\Progra Avanzada Web\Restaurante\frontend\frontend
+build_property.MSBuildProjectDirectory = C:\Users\mateo\Desktop\Restaurante\frontend\frontend
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Gino/Desktop/Universidad/2024-2/Progra Avanzada Web/Restaurante/frontend/frontend/Views/Account/Login.cshtml]
+[C:/Users/mateo/Desktop/Restaurante/frontend/frontend/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gino/Desktop/Universidad/2024-2/Progra Avanzada Web/Restaurante/frontend/frontend/Views/Account/Register.cshtml]
+[C:/Users/mateo/Desktop/Restaurante/frontend/frontend/Views/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gino/Desktop/Universidad/2024-2/Progra Avanzada Web/Restaurante/frontend/frontend/Views/Administrador/Create.cshtml]
+[C:/Users/mateo/Desktop/Restaurante/frontend/frontend/Views/Administrador/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYWRvclxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gino/Desktop/Universidad/2024-2/Progra Avanzada Web/Restaurante/frontend/frontend/Views/Administrador/DeactivateView.cshtml]
+[C:/Users/mateo/Desktop/Restaurante/frontend/frontend/Views/Administrador/DeactivateView.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYWRvclxEZWFjdGl2YXRlVmlldy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gino/Desktop/Universidad/2024-2/Progra Avanzada Web/Restaurante/frontend/frontend/Views/Administrador/Edit.cshtml]
+[C:/Users/mateo/Desktop/Restaurante/frontend/frontend/Views/Administrador/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYWRvclxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gino/Desktop/Universidad/2024-2/Progra Avanzada Web/Restaurante/frontend/frontend/Views/Administrador/Index.cshtml]
+[C:/Users/mateo/Desktop/Restaurante/frontend/frontend/Views/Administrador/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYWRvclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gino/Desktop/Universidad/2024-2/Progra Avanzada Web/Restaurante/frontend/frontend/Views/Bebida/Create.cshtml]
+[C:/Users/mateo/Desktop/Restaurante/frontend/frontend/Views/Bebida/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmViaWRhXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gino/Desktop/Universidad/2024-2/Progra Avanzada Web/Restaurante/frontend/frontend/Views/Bebida/Edit.cshtml]
+[C:/Users/mateo/Desktop/Restaurante/frontend/frontend/Views/Bebida/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmViaWRhXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gino/Desktop/Universidad/2024-2/Progra Avanzada Web/Restaurante/frontend/frontend/Views/Categoria/Create.cshtml]
+[C:/Users/mateo/Desktop/Restaurante/frontend/frontend/Views/Categoria/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gino/Desktop/Universidad/2024-2/Progra Avanzada Web/Restaurante/frontend/frontend/Views/Categoria/Delete.cshtml]
+[C:/Users/mateo/Desktop/Restaurante/frontend/frontend/Views/Categoria/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gino/Desktop/Universidad/2024-2/Progra Avanzada Web/Restaurante/frontend/frontend/Views/Categoria/Details.cshtml]
+[C:/Users/mateo/Desktop/Restaurante/frontend/frontend/Views/Categoria/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gino/Desktop/Universidad/2024-2/Progra Avanzada Web/Restaurante/frontend/frontend/Views/Categoria/Edit.cshtml]
+[C:/Users/mateo/Desktop/Restaurante/frontend/frontend/Views/Categoria/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gino/Desktop/Universidad/2024-2/Progra Avanzada Web/Restaurante/frontend/frontend/Views/Categoria/Index.cshtml]
+[C:/Users/mateo/Desktop/Restaurante/frontend/frontend/Views/Categoria/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gino/Desktop/Universidad/2024-2/Progra Avanzada Web/Restaurante/frontend/frontend/Views/Chef/Create.cshtml]
+[C:/Users/mateo/Desktop/Restaurante/frontend/frontend/Views/Chef/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hlZlxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gino/Desktop/Universidad/2024-2/Progra Avanzada Web/Restaurante/frontend/frontend/Views/Chef/DesactiveView.cshtml]
+[C:/Users/mateo/Desktop/Restaurante/frontend/frontend/Views/Chef/DesactiveView.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hlZlxEZXNhY3RpdmVWaWV3LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gino/Desktop/Universidad/2024-2/Progra Avanzada Web/Restaurante/frontend/frontend/Views/Chef/Edit.cshtml]
+[C:/Users/mateo/Desktop/Restaurante/frontend/frontend/Views/Chef/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hlZlxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gino/Desktop/Universidad/2024-2/Progra Avanzada Web/Restaurante/frontend/frontend/Views/Chef/Index.cshtml]
+[C:/Users/mateo/Desktop/Restaurante/frontend/frontend/Views/Chef/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hlZlxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gino/Desktop/Universidad/2024-2/Progra Avanzada Web/Restaurante/frontend/frontend/Views/Cliente/Index.cshtml]
+[C:/Users/mateo/Desktop/Restaurante/frontend/frontend/Views/Cliente/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gino/Desktop/Universidad/2024-2/Progra Avanzada Web/Restaurante/frontend/frontend/Views/Cuenta/Index.cshtml]
+[C:/Users/mateo/Desktop/Restaurante/frontend/frontend/Views/Cuenta/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VlbnRhXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gino/Desktop/Universidad/2024-2/Progra Avanzada Web/Restaurante/frontend/frontend/Views/Empleado/Create.cshtml]
+[C:/Users/mateo/Desktop/Restaurante/frontend/frontend/Views/Empleado/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbGVhZG9cQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gino/Desktop/Universidad/2024-2/Progra Avanzada Web/Restaurante/frontend/frontend/Views/Empleado/Edit.cshtml]
+[C:/Users/mateo/Desktop/Restaurante/frontend/frontend/Views/Empleado/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbGVhZG9cRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gino/Desktop/Universidad/2024-2/Progra Avanzada Web/Restaurante/frontend/frontend/Views/Empleado/Index.cshtml]
+[C:/Users/mateo/Desktop/Restaurante/frontend/frontend/Views/Empleado/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbGVhZG9cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gino/Desktop/Universidad/2024-2/Progra Avanzada Web/Restaurante/frontend/frontend/Views/Home/Index.cshtml]
+[C:/Users/mateo/Desktop/Restaurante/frontend/frontend/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gino/Desktop/Universidad/2024-2/Progra Avanzada Web/Restaurante/frontend/frontend/Views/Home/Privacy.cshtml]
+[C:/Users/mateo/Desktop/Restaurante/frontend/frontend/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gino/Desktop/Universidad/2024-2/Progra Avanzada Web/Restaurante/frontend/frontend/Views/MenuView/Index.cshtml]
+[C:/Users/mateo/Desktop/Restaurante/frontend/frontend/Views/MenuView/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudVZpZXdcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gino/Desktop/Universidad/2024-2/Progra Avanzada Web/Restaurante/frontend/frontend/Views/Mesa/Create.cshtml]
+[C:/Users/mateo/Desktop/Restaurante/frontend/frontend/Views/Mesa/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVzYVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gino/Desktop/Universidad/2024-2/Progra Avanzada Web/Restaurante/frontend/frontend/Views/Mesa/Delete.cshtml]
+[C:/Users/mateo/Desktop/Restaurante/frontend/frontend/Views/Mesa/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVzYVxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gino/Desktop/Universidad/2024-2/Progra Avanzada Web/Restaurante/frontend/frontend/Views/Mesa/Details.cshtml]
+[C:/Users/mateo/Desktop/Restaurante/frontend/frontend/Views/Mesa/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVzYVxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gino/Desktop/Universidad/2024-2/Progra Avanzada Web/Restaurante/frontend/frontend/Views/Mesa/Edit.cshtml]
+[C:/Users/mateo/Desktop/Restaurante/frontend/frontend/Views/Mesa/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVzYVxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gino/Desktop/Universidad/2024-2/Progra Avanzada Web/Restaurante/frontend/frontend/Views/Mesa/Index.cshtml]
+[C:/Users/mateo/Desktop/Restaurante/frontend/frontend/Views/Mesa/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVzYVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gino/Desktop/Universidad/2024-2/Progra Avanzada Web/Restaurante/frontend/frontend/Views/Platillo/Create.cshtml]
+[C:/Users/mateo/Desktop/Restaurante/frontend/frontend/Views/Orden/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZW5cQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mateo/Desktop/Restaurante/frontend/frontend/Views/Orden/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZW5cRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mateo/Desktop/Restaurante/frontend/frontend/Views/Orden/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZW5cRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mateo/Desktop/Restaurante/frontend/frontend/Views/Orden/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZW5cRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mateo/Desktop/Restaurante/frontend/frontend/Views/Orden/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mateo/Desktop/Restaurante/frontend/frontend/Views/Platillo/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxhdGlsbG9cQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gino/Desktop/Universidad/2024-2/Progra Avanzada Web/Restaurante/frontend/frontend/Views/Platillo/Edit.cshtml]
+[C:/Users/mateo/Desktop/Restaurante/frontend/frontend/Views/Platillo/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxhdGlsbG9cRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gino/Desktop/Universidad/2024-2/Progra Avanzada Web/Restaurante/frontend/frontend/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/mateo/Desktop/Restaurante/frontend/frontend/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gino/Desktop/Universidad/2024-2/Progra Avanzada Web/Restaurante/frontend/frontend/Views/_ViewImports.cshtml]
+[C:/Users/mateo/Desktop/Restaurante/frontend/frontend/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gino/Desktop/Universidad/2024-2/Progra Avanzada Web/Restaurante/frontend/frontend/Views/_ViewStart.cshtml]
+[C:/Users/mateo/Desktop/Restaurante/frontend/frontend/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gino/Desktop/Universidad/2024-2/Progra Avanzada Web/Restaurante/frontend/frontend/Views/Shared/_Layout.cshtml]
+[C:/Users/mateo/Desktop/Restaurante/frontend/frontend/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-emfvoyloj2

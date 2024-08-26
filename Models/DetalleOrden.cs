@@ -33,10 +33,10 @@ namespace backend.Models
         public Platillo? Platillo { get; set; }
         [BindNever]
         [JsonIgnore]
-        public IEnumerable<Bebida> Bebidas { get; set; } // Para acceder, cambiar, saber el largo de esta lista
+        public IEnumerable<Bebida>? Bebidas { get; set; } // Para acceder, cambiar, saber el largo de esta lista
         [BindNever]
         [JsonIgnore]
-        public IEnumerable<Platillo> Platillos { get; set; } // Para acceder, cambiar, saber el largo de esta lista
-        public decimal Precio { get; set; }
+        public IEnumerable<Platillo>? Platillos { get; set; } // Para acceder, cambiar, saber el largo de esta lista
+        public int Precio { get; set; }
     }
 }

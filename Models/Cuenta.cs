@@ -13,10 +13,11 @@ namespace backend.Models
         public int Id_Orden { get; set; }
         [Required(ErrorMessage = "Es requerido")]
         [Column(TypeName = "decimal(10, 2)")]
-        public decimal Total { get; set; }
+        public int Total { get; set; }
         [Required(ErrorMessage = "Es requerido")]
         public bool Cancelado { get; set; }
         [BindNever]
         public Orden Orden { get; set; } // Para navegación en el context
+        public Cliente Cliente { get; set; }
     }
 }

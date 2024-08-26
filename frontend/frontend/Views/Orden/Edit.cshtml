@@ -1,0 +1,71 @@
+﻿@model backend.Models.Orden
+
+<main class="main" id="main">
+    <div class="col-lg-12">
+
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Editar Orden</h5>
+                <p>Add lightweight datatables to your project with using the <a href="https://github.com/fiduswriter/Simple-DataTables" target="_blank">Simple DataTables</a> library. Just add <code>.datatable</code> class name to any table you wish to conver to a datatable. Check for <a href="https://fiduswriter.github.io/simple-datatables/demos/" target="_blank">more examples</a>.</p>
+            
+                <form asp-action="Edit">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <input type="hidden" asp-for="Id_Orden" />
+                    <div class="form-group">
+                        <label asp-for="Fecha" class="control-label"></label>
+                        <input asp-for="Fecha" class="form-control" />
+                        <span asp-validation-for="Fecha" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Hora" class="control-label"></label>
+                        <input asp-for="Hora" class="form-control" />
+                        <span asp-validation-for="Hora" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Numero_Orden" class="control-label"></label>
+                        <input asp-for="Numero_Orden" class="form-control" />
+                        <span asp-validation-for="Numero_Orden" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Cantidad_Personas" class="control-label"></label>
+                        <input asp-for="Cantidad_Personas" class="form-control" />
+                        <span asp-validation-for="Cantidad_Personas" class="text-danger"></span>
+                    </div>
+                    <div class="form-group form-check">
+                        <label class="form-check-label">
+                            <input class="form-check-input" asp-for="Cancelado" /> @Html.DisplayNameFor(model => model.Cancelado)
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Id_Detalle_Orden" class="control-label"></label>
+                        <input asp-for="Id_Detalle_Orden" class="form-control" />
+                        <span asp-validation-for="Id_Detalle_Orden" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Id_Empleado" class="control-label"></label>
+                        <select asp-for="Id_Empleado" class="form-control" asp-items="ViewBag.Id_Empleado"></select>
+                        <span asp-validation-for="Id_Empleado" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Id_Cliente" class="control-label"></label>
+                        <select asp-for="Id_Cliente" class="form-control" asp-items="ViewBag.Id_Cliente"></select>
+                        <span asp-validation-for="Id_Cliente" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Id_Mesa" class="control-label"></label>
+                        <select asp-for="Id_Mesa" class="form-control" asp-items="ViewBag.Id_Mesa"></select>
+                        <span asp-validation-for="Id_Mesa" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Id_Chef" class="control-label"></label>
+                        <select asp-for="Id_Chef" class="form-control" asp-items="ViewBag.Id_Chef"></select>
+                        <span asp-validation-for="Id_Chef" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Save" class="btn btn-primary" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</main>

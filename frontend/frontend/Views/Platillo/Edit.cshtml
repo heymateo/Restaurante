@@ -15,7 +15,7 @@
                             esté siempre actualizada y refleje nuestras mejores opciones culinarias.
                         </p>
 
-                        <form class="row g-3" asp-action="Edit" method="put">
+                        <form class="row g-3" asp-action="Edit" method="post">
                             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                             <input type="hidden" asp-for="Id_Platillo" />
 
@@ -44,7 +44,7 @@
                             </div>
 
                             <div class="col-md-6">
-                                <select class="form-select" id="floatingSelect" name="categoria">
+                                <select class="form-select" id="floatingSelect" name="id_categoria">
                                     <option value="" selected>Selecciona una categoría</option>
                                     @foreach (var categoria in Model.Categorias)
                                     {

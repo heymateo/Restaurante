@@ -4766,23 +4766,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Gino\\.nuget\\packages\\": {},
+    "C:\\Users\\mateo\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Gino\\Desktop\\Universidad\\2024-2\\Progra Avanzada Web\\Restaurante\\Models\\Models.csproj",
+      "projectUniqueName": "C:\\Users\\mateo\\Desktop\\Restaurante\\Models\\Models.csproj",
       "projectName": "Models",
-      "projectPath": "C:\\Users\\Gino\\Desktop\\Universidad\\2024-2\\Progra Avanzada Web\\Restaurante\\Models\\Models.csproj",
-      "packagesPath": "C:\\Users\\Gino\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Gino\\Desktop\\Universidad\\2024-2\\Progra Avanzada Web\\Restaurante\\Models\\obj\\",
+      "projectPath": "C:\\Users\\mateo\\Desktop\\Restaurante\\Models\\Models.csproj",
+      "packagesPath": "C:\\Users\\mateo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\mateo\\Desktop\\Restaurante\\Models\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Gino\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\mateo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],

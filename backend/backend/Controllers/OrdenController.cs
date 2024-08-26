@@ -1,4 +1,5 @@
 ﻿using backend.Models;
+using frontend.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Transactions;
@@ -34,41 +35,49 @@ namespace backend.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<Orden>> PostOrden(Orden orden)
+        public async Task<ActionResult<Orden>> PostOrden(OrdenDTO ordenDTO)
         {
-            using (var transaction = _context.Database.BeginTransaction())
+            var orden = new Orden
             {
-                try
-                {
-                    _context.Orden.Add(orden);
-                    await _context.SaveChangesAsync();
+                Fecha = ordenDTO.Fecha,
+                Hora = ordenDTO.Hora,
+                Cantidad_Personas = ordenDTO.Cantidad_Personas,
+                Id_Mesa = ordenDTO.Id_Mesa,
+                // Otros campos se pueden establecer si son necesarios y manejados automáticamente
+            };
 
-                    transaction.Commit();
+            try
+            {
+                _context.Orden.Add(orden);
+                await _context.SaveChangesAsync();
 
-                    return CreatedAtAction("GetOrden", new { id = orden.Id_Mesa }, orden);
-                }
-                catch (Exception)
-                {
-                    transaction.Rollback();
-                    throw;
-                }
+                return CreatedAtAction("GetOrden", new { id = orden.Id_Orden }, orden);
             }
-
-
+            catch (Exception ex)
+            {
+                // Manejar el error adecuadamente
+                return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
+            }
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutOrden(int id, [FromBody] Orden orden)
+        public async Task<IActionResult> PutOrden(int id, [FromBody] OrdenDTO ordenDTO)
         {
-            if (id != orden.Id_Orden)
+            var orden = await _context.Orden.FindAsync(id);
+            if (orden == null)
             {
                 return NotFound();
             }
 
-            _context.Orden.Entry(orden).State = EntityState.Modified;
+            orden.Fecha = ordenDTO.Fecha;
+            orden.Hora = ordenDTO.Hora;
+            orden.Cantidad_Personas = ordenDTO.Cantidad_Personas;
+            orden.Id_Mesa = ordenDTO.Id_Mesa;
+            // Otros campos se pueden actualizar si son necesarios
 
             try
             {
+                _context.Entry(orden).State = EntityState.Modified;
                 await _context.SaveChangesAsync();
             }
             catch (DbUpdateConcurrencyException)
