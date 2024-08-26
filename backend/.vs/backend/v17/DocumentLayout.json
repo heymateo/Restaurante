@@ -1,8 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Gino\\Desktop\\Universidad\\2024-2\\Progra Avanzada Web\\Restaurante\\backend\\",
+  "WorkspaceRootPath": "C:\\Users\\mateo\\Desktop\\Restaurante\\backend\\",
   "Documents": [
     {
+<<<<<<< Updated upstream
       "AbsoluteMoniker": "D:0:0:{4BB4B1E4-2FFA-4ADB-A433-373309BA419D}|..\\frontend\\frontend\\frontend.csproj|c:\\users\\gino\\desktop\\universidad\\2024-2\\progra avanzada web\\restaurante\\frontend\\frontend\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
@@ -16,33 +17,51 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{4BB4B1E4-2FFA-4ADB-A433-373309BA419D}|..\\frontend\\frontend\\frontend.csproj|c:\\users\\gino\\desktop\\universidad\\2024-2\\progra avanzada web\\restaurante\\frontend\\frontend\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+      "AbsoluteMoniker": "D:0:0:{4BB4B1E4-2FFA-4ADB-A433-373309BA419D}|..\\frontend\\frontend\\frontend.csproj|c:\\users\\mateo\\desktop\\restaurante\\frontend\\frontend\\controllers\\ordencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> Stashed changes
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4BB4B1E4-2FFA-4ADB-A433-373309BA419D}|..\\frontend\\frontend\\frontend.csproj|c:\\users\\gino\\desktop\\universidad\\2024-2\\progra avanzada web\\restaurante\\frontend\\frontend\\controllers\\chefcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A4CCAC7F-84D6-4831-BDE6-FD103CEB7534}|backend\\backend.csproj|c:\\users\\mateo\\desktop\\restaurante\\backend\\backend\\controllers\\ordencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4CCAC7F-84D6-4831-BDE6-FD103CEB7534}|backend\\backend.csproj|solutionrelative:backend\\controllers\\ordencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+<<<<<<< Updated upstream
       "AbsoluteMoniker": "D:0:0:{4BB4B1E4-2FFA-4ADB-A433-373309BA419D}|..\\frontend\\frontend\\frontend.csproj|c:\\users\\gino\\desktop\\universidad\\2024-2\\progra avanzada web\\restaurante\\frontend\\frontend\\views\\chef\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D0FF8025-8F08-4D22-86E5-2B7D7237EB06}|..\\Models\\Models.csproj|c:\\users\\gino\\desktop\\universidad\\2024-2\\progra avanzada web\\restaurante\\models\\chef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+      "AbsoluteMoniker": "D:0:0:{A4CCAC7F-84D6-4831-BDE6-FD103CEB7534}|backend\\backend.csproj|c:\\users\\mateo\\desktop\\restaurante\\backend\\backend\\controllers\\mesacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4CCAC7F-84D6-4831-BDE6-FD103CEB7534}|backend\\backend.csproj|solutionrelative:backend\\controllers\\mesacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> Stashed changes
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4BB4B1E4-2FFA-4ADB-A433-373309BA419D}|..\\frontend\\frontend\\frontend.csproj|c:\\users\\gino\\desktop\\universidad\\2024-2\\progra avanzada web\\restaurante\\frontend\\frontend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D0FF8025-8F08-4D22-86E5-2B7D7237EB06}|..\\Models\\Models.csproj|c:\\users\\mateo\\desktop\\restaurante\\models\\orden.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A4CCAC7F-84D6-4831-BDE6-FD103CEB7534}|backend\\backend.csproj|c:\\users\\gino\\desktop\\universidad\\2024-2\\progra avanzada web\\restaurante\\backend\\backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A4CCAC7F-84D6-4831-BDE6-FD103CEB7534}|backend\\backend.csproj|solutionrelative:backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4BB4B1E4-2FFA-4ADB-A433-373309BA419D}|..\\frontend\\frontend\\frontend.csproj|c:\\users\\mateo\\desktop\\restaurante\\frontend\\frontend\\views\\orden\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A4CCAC7F-84D6-4831-BDE6-FD103CEB7534}|backend\\backend.csproj|c:\\users\\gino\\desktop\\universidad\\2024-2\\progra avanzada web\\restaurante\\backend\\backend\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A4CCAC7F-84D6-4831-BDE6-FD103CEB7534}|backend\\backend.csproj|solutionrelative:backend\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4BB4B1E4-2FFA-4ADB-A433-373309BA419D}|..\\frontend\\frontend\\frontend.csproj|c:\\users\\mateo\\desktop\\restaurante\\frontend\\frontend\\views\\cuenta\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4BB4B1E4-2FFA-4ADB-A433-373309BA419D}|..\\frontend\\frontend\\frontend.csproj|c:\\users\\gino\\desktop\\universidad\\2024-2\\progra avanzada web\\restaurante\\frontend\\frontend\\controllers\\administradorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4BB4B1E4-2FFA-4ADB-A433-373309BA419D}|..\\frontend\\frontend\\frontend.csproj|c:\\users\\mateo\\desktop\\restaurante\\frontend\\frontend\\controllers\\cuentacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+<<<<<<< Updated upstream
       "AbsoluteMoniker": "D:0:0:{A4CCAC7F-84D6-4831-BDE6-FD103CEB7534}|backend\\backend.csproj|c:\\users\\gino\\desktop\\universidad\\2024-2\\progra avanzada web\\restaurante\\backend\\backend\\controllers\\administradorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A4CCAC7F-84D6-4831-BDE6-FD103CEB7534}|backend\\backend.csproj|solutionrelative:backend\\controllers\\administradorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+      "AbsoluteMoniker": "D:0:0:{4BB4B1E4-2FFA-4ADB-A433-373309BA419D}|..\\frontend\\frontend\\frontend.csproj|c:\\users\\mateo\\desktop\\restaurante\\frontend\\frontend\\views\\administrador\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4CCAC7F-84D6-4831-BDE6-FD103CEB7534}|backend\\backend.csproj|c:\\users\\mateo\\desktop\\restaurante\\backend\\backend\\controllers\\detalleordencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4CCAC7F-84D6-4831-BDE6-FD103CEB7534}|backend\\backend.csproj|solutionrelative:backend\\controllers\\detalleordencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BB4B1E4-2FFA-4ADB-A433-373309BA419D}|..\\frontend\\frontend\\frontend.csproj|c:\\users\\mateo\\desktop\\restaurante\\frontend\\frontend\\views\\orden\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+>>>>>>> Stashed changes
     }
   ],
   "DocumentGroupContainers": [
@@ -51,23 +70,21 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
+<<<<<<< Updated upstream
           "DockedWidth": 334,
           "SelectedChildIndex": 3,
+=======
+          "DockedWidth": 482,
+          "SelectedChildIndex": 2,
+>>>>>>> Stashed changes
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 5,
               "Title": "ChefController.cs",
               "DocumentMoniker": "C:\\Users\\Gino\\Desktop\\Universidad\\2024-2\\Progra Avanzada Web\\Restaurante\\frontend\\frontend\\Controllers\\ChefController.cs",
@@ -75,12 +92,22 @@
               "ToolTip": "C:\\Users\\Gino\\Desktop\\Universidad\\2024-2\\Progra Avanzada Web\\Restaurante\\frontend\\frontend\\Controllers\\ChefController.cs",
               "RelativeToolTip": "..\\frontend\\frontend\\Controllers\\ChefController.cs",
               "ViewState": "AQIAAG8AAAAAAAAAAAAmwGUAAAARAAAA",
+=======
+              "DocumentIndex": 2,
+              "Title": "MesaController.cs",
+              "DocumentMoniker": "C:\\Users\\mateo\\Desktop\\Restaurante\\backend\\backend\\Controllers\\MesaController.cs",
+              "RelativeDocumentMoniker": "backend\\Controllers\\MesaController.cs",
+              "ToolTip": "C:\\Users\\mateo\\Desktop\\Restaurante\\backend\\backend\\Controllers\\MesaController.cs",
+              "RelativeToolTip": "backend\\Controllers\\MesaController.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAYwAAAAAAAAAAA",
+>>>>>>> Stashed changes
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-24T15:56:48.753Z",
+              "WhenOpened": "2024-08-26T17:16:53.567Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 6,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\Gino\\Desktop\\Universidad\\2024-2\\Progra Avanzada Web\\Restaurante\\frontend\\frontend\\Views\\Chef\\Edit.cshtml",
@@ -172,10 +199,22 @@
               "ViewState": "AQIAABUAAAAAAAAAAAAAADsAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-22T21:56:29.192Z",
+=======
+              "DocumentIndex": 0,
+              "Title": "OrdenController.cs",
+              "DocumentMoniker": "C:\\Users\\mateo\\Desktop\\Restaurante\\frontend\\frontend\\Controllers\\OrdenController.cs",
+              "RelativeDocumentMoniker": "..\\frontend\\frontend\\Controllers\\OrdenController.cs",
+              "ToolTip": "C:\\Users\\mateo\\Desktop\\Restaurante\\frontend\\frontend\\Controllers\\OrdenController.cs",
+              "RelativeToolTip": "..\\frontend\\frontend\\Controllers\\OrdenController.cs",
+              "ViewState": "AQIAAFkAAAAAAAAAAAAgwG8AAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T16:22:38.519Z",
+>>>>>>> Stashed changes
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 1,
               "Title": "Login.cshtml",
               "DocumentMoniker": "C:\\Users\\Gino\\Desktop\\Universidad\\2024-2\\Progra Avanzada Web\\Restaurante\\frontend\\frontend\\Views\\Account\\Login.cshtml",
@@ -211,10 +250,96 @@
               "ViewState": "AQIAACcAAAAAAAAAAAAAADYAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-08-22T21:49:50.903Z",
+=======
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\mateo\\Desktop\\Restaurante\\frontend\\frontend\\Views\\Administrador\\Index.cshtml",
+              "RelativeDocumentMoniker": "..\\frontend\\frontend\\Views\\Administrador\\Index.cshtml",
+              "ToolTip": "C:\\Users\\mateo\\Desktop\\Restaurante\\frontend\\frontend\\Views\\Administrador\\Index.cshtml",
+              "RelativeToolTip": "..\\frontend\\frontend\\Views\\Administrador\\Index.cshtml",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABIAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-26T06:00:51.901Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CuentaController.cs",
+              "DocumentMoniker": "C:\\Users\\mateo\\Desktop\\Restaurante\\frontend\\frontend\\Controllers\\CuentaController.cs",
+              "RelativeDocumentMoniker": "..\\frontend\\frontend\\Controllers\\CuentaController.cs",
+              "ToolTip": "C:\\Users\\mateo\\Desktop\\Restaurante\\frontend\\frontend\\Controllers\\CuentaController.cs",
+              "RelativeToolTip": "..\\frontend\\frontend\\Controllers\\CuentaController.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAAQwEMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T05:52:03.366Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\mateo\\Desktop\\Restaurante\\frontend\\frontend\\Views\\Cuenta\\Index.cshtml",
+              "RelativeDocumentMoniker": "..\\frontend\\frontend\\Views\\Cuenta\\Index.cshtml",
+              "ToolTip": "C:\\Users\\mateo\\Desktop\\Restaurante\\frontend\\frontend\\Views\\Cuenta\\Index.cshtml",
+              "RelativeToolTip": "..\\frontend\\frontend\\Views\\Cuenta\\Index.cshtml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAQwB8AAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-26T05:46:59.585Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DetalleOrdenController.cs",
+              "DocumentMoniker": "C:\\Users\\mateo\\Desktop\\Restaurante\\backend\\backend\\Controllers\\DetalleOrdenController.cs",
+              "RelativeDocumentMoniker": "backend\\Controllers\\DetalleOrdenController.cs",
+              "ToolTip": "C:\\Users\\mateo\\Desktop\\Restaurante\\backend\\backend\\Controllers\\DetalleOrdenController.cs",
+              "RelativeToolTip": "backend\\Controllers\\DetalleOrdenController.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAwGYAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T05:05:51.428Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "OrdenController.cs",
+              "DocumentMoniker": "C:\\Users\\mateo\\Desktop\\Restaurante\\backend\\backend\\Controllers\\OrdenController.cs",
+              "RelativeDocumentMoniker": "backend\\Controllers\\OrdenController.cs",
+              "ToolTip": "C:\\Users\\mateo\\Desktop\\Restaurante\\backend\\backend\\Controllers\\OrdenController.cs",
+              "RelativeToolTip": "backend\\Controllers\\OrdenController.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAAAcwF8AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-24T19:33:08.236Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\mateo\\Desktop\\Restaurante\\frontend\\frontend\\Views\\Orden\\Create.cshtml",
+              "RelativeDocumentMoniker": "..\\frontend\\frontend\\Views\\Orden\\Create.cshtml",
+              "ToolTip": "C:\\Users\\mateo\\Desktop\\Restaurante\\frontend\\frontend\\Views\\Orden\\Create.cshtml",
+              "RelativeToolTip": "..\\frontend\\frontend\\Views\\Orden\\Create.cshtml",
+              "ViewState": "AQIAADkAAAAAAAAAAAAAAAEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-26T15:57:59.564Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Orden.cs",
+              "DocumentMoniker": "C:\\Users\\mateo\\Desktop\\Restaurante\\Models\\Orden.cs",
+              "RelativeDocumentMoniker": "..\\Models\\Orden.cs",
+              "ToolTip": "C:\\Users\\mateo\\Desktop\\Restaurante\\Models\\Orden.cs",
+              "RelativeToolTip": "..\\Models\\Orden.cs",
+              "ViewState": "AQIAADkAAAAAAAAAAAAxwEIAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T16:04:39.049Z",
+>>>>>>> Stashed changes
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 4,
               "Title": "AccountController.cs",
               "DocumentMoniker": "C:\\Users\\Gino\\Desktop\\Universidad\\2024-2\\Progra Avanzada Web\\Restaurante\\frontend\\frontend\\Controllers\\AccountController.cs",
@@ -237,6 +362,17 @@
               "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-22T21:23:08.603Z"
+=======
+              "DocumentIndex": 9,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\mateo\\Desktop\\Restaurante\\frontend\\frontend\\Views\\Orden\\Details.cshtml",
+              "RelativeDocumentMoniker": "..\\frontend\\frontend\\Views\\Orden\\Details.cshtml",
+              "ToolTip": "C:\\Users\\mateo\\Desktop\\Restaurante\\frontend\\frontend\\Views\\Orden\\Details.cshtml",
+              "RelativeToolTip": "..\\frontend\\frontend\\Views\\Orden\\Details.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-25T18:21:29.36Z"
+>>>>>>> Stashed changes
             }
           ]
         }

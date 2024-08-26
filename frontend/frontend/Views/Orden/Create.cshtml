@@ -1,0 +1,118 @@
+﻿@model backend.Models.Orden
+
+
+<main id="main" class="main">
+    <div class="col-lg-12">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Crear Orden</h5>
+                <p>
+                    Bienvenido a la sección de creación de órdenes. Aquí puedes agregar nuevas órdenes al sistema, proporcionando la
+                    información necesaria como la fecha, hora, número de orden, y asignando mesa, cliente y chef.
+                </p>
+
+                <!-- Floating Labels Form para Crear Orden -->
+                <form class="row g-3" asp-action="Create" method="post">
+                    <!-- Campos de la Orden -->
+                    <div class="col-md-6">
+                        <div class="form-floating">
+                            <input asp-for="Fecha" type="date" class="form-control" id="floatingFecha" placeholder="Fecha">
+                            <label asp-for="Fecha"></label>
+                            <span asp-validation-for="Fecha" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-floating">
+                            <input asp-for="Hora" type="time" class="form-control" id="floatingHora" placeholder="Hora">
+                            <label asp-for="Hora"></label>
+                            <span asp-validation-for="Hora" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-floating">
+                            <input asp-for="Numero_Orden" type="text" class="form-control" id="floatingNumeroOrden" placeholder="Número de Orden">
+                            <label asp-for="Numero_Orden"></label>
+                            <span asp-validation-for="Numero_Orden" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-floating">
+                            <input asp-for="Cantidad_Personas" type="number" class="form-control" id="floatingCantidadPersonas" placeholder="Cantidad de Personas">
+                            <label asp-for="Cantidad_Personas"></label>
+                            <span asp-validation-for="Cantidad_Personas" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-check">
+                            <input asp-for="Cancelado" class="form-check-input" type="checkbox" id="canceladoCheck">
+                            <label asp-for="Cancelado" class="form-check-label" for="canceladoCheck"></label>
+                            <span asp-validation-for="Cancelado" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-floating">
+                            <select asp-for="Id_Empleado" class="form-control" asp-items="ViewBag.Id_Empleado">
+                            </select>
+                            <label asp-for="Id_Empleado"></label>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-floating">
+                            <select asp-for="Id_Cliente" class="form-control" asp-items="ViewBag.Id_Cliente">
+                            </select>
+                            <label asp-for="Id_Cliente"></label>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-floating">
+                            <select asp-for="Id_Mesa" class="form-control" asp-items="ViewBag.Id_Mesa">
+                            </select>
+                            <label asp-for="Id_Mesa"></label>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-floating">
+                            <select asp-for="Id_Chef" class="form-control" asp-items="ViewBag.Id_Chef">
+                            </select>
+                            <label asp-for="Id_Chef"></label>
+                        </div>
+                    </div>
+
+                    <div class="btn-group" role="group">
+                        <button type="submit" class="btn btn-primary">Crear Orden</button>
+                        <a asp-action="Index" asp-controller="Orden" class="btn btn-secondary">Regresar</a>
+                        <button type="reset" class="btn btn-danger">Resetear</button>
+                    </div>
+                </form><!-- End floating Labels Form para Crear Orden -->
+
+                <hr />
+
+                <!-- Formulario para Crear Cliente -->
+                <h5 class="card-title">Crear Cliente</h5>
+                <p>
+                    Aquí puedes agregar un nuevo cliente al sistema mientras creas una orden.
+                </p>
+                <form class="row g-3" asp-action="CreateCliente" method="post">
+                    <div class="col-md-6">
+                        <div class="form-floating">
+                            <input asp-for="Cliente.Nombre" type="text" class="form-control" id="floatingNombreCliente" placeholder="Nombre del Cliente">
+                            <label asp-for="Cliente.Nombre"></label>
+                            <span asp-validation-for="Cliente.Nombre" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-floating">
+                            <input asp-for="Cliente.Apellido" class="form-control" id="floatingApellidoCliente" placeholder="Apellido del Cliente">
+                            <label asp-for="Cliente.Apellido"></label>
+                            <span asp-validation-for="Cliente.Apellido" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="btn-group" role="group">
+                        <button type="submit" class="btn btn-primary">Crear Cliente</button>
+                    </div>
+                </form><!-- End floating Labels Form para Crear Cliente -->
+            </div>
+        </div>
+    </div>
+</main><!-- End #main -->

@@ -22,7 +22,8 @@ namespace backend.Models
         public TimeSpan Hora { get; set; }
 
         [Required(ErrorMessage = "Es requerido")]
-        [DisplayName("#")]
+        [DatabaseGenerated(DatabaseGeneratedOption.Computed)]
+        [DisplayName("Número de Orden")]
         public int Numero_Orden { get; set; }
 
         [Required(ErrorMessage = "Es requerido")]
@@ -32,18 +33,22 @@ namespace backend.Models
         [BindNever]
         public int Id_Detalle_Orden { get; set; }
         [BindNever]
+        [NotMapped]
+        [JsonIgnore]
         public DetalleOrden DetalleOrden { get; set; }
 
         [BindNever]
         public int Id_Empleado { get; set; }
         [BindNever]
         [JsonIgnore]
+        [NotMapped]
         public Empleado Empleado { get; set; }
 
         [BindNever]
         public int Id_Cliente { get; set; }
         [BindNever]
         [JsonIgnore]
+        [NotMapped]
 
         public Cliente Cliente { get; set; }
 
@@ -55,16 +60,19 @@ namespace backend.Models
 
         [BindNever]
         [JsonIgnore]
+        [NotMapped]
         public Mesa Mesa { get; set; }
 
         [BindNever]
         public int Id_Chef { get; set; }
         [BindNever]
         [JsonIgnore]
+        [NotMapped]
 
         public Chef Chef { get; set; } 
         [BindNever]
         [JsonIgnore]
+        [NotMapped]
 
         public Cuenta Cuenta { get; set; } 
     }

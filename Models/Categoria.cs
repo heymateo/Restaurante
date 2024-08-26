@@ -14,9 +14,9 @@ namespace backend.Models
         [Required(ErrorMessage = "Es requerido")]
         [StringLength(30, ErrorMessage = "Máximo 30 caracteres")]
         public string Nombre { get; set; }
-
+        [JsonIgnore]
         public ICollection<Platillo>? Platillos { get; set; } // Para ver la lista
-
+        [JsonIgnore]
         public ICollection<Bebida>? Bebidas { get; set; } // Para ver la lista
     }
 }

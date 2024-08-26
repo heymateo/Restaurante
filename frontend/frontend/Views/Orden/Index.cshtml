@@ -1,0 +1,95 @@
+﻿@model IEnumerable<backend.Models.Orden>
+
+<main id="main" class="main">
+    <section class="section">
+        <div class="row">
+
+            <div class="col-lg-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Lista de Órdenes</h5>
+                        <p>
+                            Bienvenido a la sección de órdenes. Aquí encontrará una lista completa de las órdenes registrados en el sistema.
+                            Desde esta página, puede visualizar la información de cada orden, con opción de filtrado entre órdenes canceladas y abiertas.
+                        </p>
+
+                        <table class="table datatable">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.Fecha)
+                                    </th>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.Hora)
+                                    </th>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.Numero_Orden)
+                                    </th>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.Cantidad_Personas)
+                                    </th>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.Cancelado)
+                                    </th>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.Empleado)
+                                    </th>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.Cliente)
+                                    </th>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.Mesa)
+                                    </th>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.Chef)
+                                    </th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Fecha)
+                                        </td>
+                                        <td>
+                                            @item.Hora.ToString(@"hh\:mm\:ss")  <!-- Formatea TimeSpan -->
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Numero_Orden)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Cantidad_Personas)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Cancelado)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Empleado.Contrasena)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Cliente.Apellido)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Mesa.Numero_Mesa)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Chef.Correo)
+                                        </td>
+                                        <td>
+                                            <a class="btn btn-primary" asp-action="Details" asp-route-id="@item.Id_Orden">Ver</a>
+                                            <a class="btn btn-secondary" asp-action="Edit" asp-route-id="@item.Id_Orden">Editar</a>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+

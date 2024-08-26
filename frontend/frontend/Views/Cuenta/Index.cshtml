@@ -2,58 +2,45 @@
 
 <main id="main" class="main">
 
-    <div class="pagetitle">
-        <h1>Lista de Cuentas</h1>
-        <nav>
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                <li class="breadcrumb-item">Tables</li>
-                <li class="breadcrumb-item active">General</li>
-            </ol>
-        </nav>
-    </div><!-- End Page Title -->
+    <div class="col-lg-12">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Lista de Cuentas</h5>
+                <p>
+                    Bienvenido a la sección de administración de cuentas. Aquí encontrará una lista completa de cuentas registradas en el sistema.
+                    Desde esta página, puede revisar la información de cada cuenta, incluyendo el nombre del cliente y otros detalles relevantes.
+                </p>
 
-    <section class="section">
+                <section class="section">
 
-        <table class="table">
-            <thead>
-                <tr>
-                    <th>
-                        @Html.DisplayNameFor(model => model.First().Id_Cliente)
-                    </th>
-                    <th>
-                        @Html.DisplayNameFor(model => model.First().Id_Orden)
-                    </th>
-                    <th>
-                        @Html.DisplayNameFor(model => model.First().Total)
-                    </th>
-                    <th>
-                        @Html.DisplayNameFor(model => model.First().Cancelado)
-                    </th>
-                    <th></th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach (var item in Model)
-                {
-                    <tr>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.Id_Cliente)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.Id_Orden)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.Total)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.Cancelado)
-                        </td>
-                    </tr>
-                }
-            </tbody>
-        </table>
+                    <table class="table table-hover datatable">
+                        <thead>
+                            <tr>
+                                <th scope="col">Nombre del Cliente</th>
+                                <th scope="col">Número de Orden</th>
+                                <th scope="col">Total</th>
+                                <th scope="col">Cancelado</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td scope="col">@item.Cliente?.Nombre</td>
+                                    <td scope="col">@item.Orden?.Numero_Orden</td>
+                                    <td scope="col">₡@item.Total</td>
+                                    <td scope="col">
+                                        <input type="checkbox" disabled @(item.Cancelado ? "checked" : "") />
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
 
-    </section><!-- End .section -->
+                </section><!-- End .section -->
+            </div>
+        </div>
+    </div>
 
 </main><!-- End #main -->
